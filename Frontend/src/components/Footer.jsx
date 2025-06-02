@@ -86,11 +86,11 @@ const Footer = () => {
             <div className="copyright-section">
                 <p>© {new Date().getFullYear()} SS Superior & Associates. All Rights Reserved.</p>
                 <div className="legal-links">
-                    <Link to="/privacy-policy">Privacy Policy</Link>
+                    <Link >Privacy Policy</Link>
                     <span> | </span>
-                    <Link to="/terms">Terms of Service</Link>
+                    <Link >Terms of Service</Link>
                     <span> | </span>
-                    <Link to="/disclaimer">Disclaimer</Link>
+                    <Link >Disclaimer</Link>
                 </div>
             </div>
         </footer>
