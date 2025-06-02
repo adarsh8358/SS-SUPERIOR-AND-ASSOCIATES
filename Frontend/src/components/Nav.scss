@@ -1,0 +1,489 @@
+.nav-section {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    transition: transform 0.3s ease-in-out;
+
+    &.hide {
+        transform: translateY(-100%);
+    }
+
+    &.show {
+        transform: translateY(0);
+    }
+
+
+    .top {
+        // background-color: #284888;
+        background-color: #1f4058;
+        // background-color: #1e4c6d;
+        display: flex;
+        justify-content: space-between;
+
+
+
+        .left {
+            padding: 1rem;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+            color: rgba(245, 245, 245, 0.658);
+
+
+        }
+
+        .right {
+            display: flex;
+            justify-content: end;
+            padding: 1rem;
+
+
+
+            .social-media {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+                justify-content: center;
+                // color: white;
+
+
+
+                >a {
+                    border: 1px solid rgba(245, 245, 245, 0.658);
+                    border-radius: 0.5rem;
+                    padding: 0.1rem;
+                    cursor: pointer;
+                    color: rgba(245, 245, 245, 0.658);
+                    text-decoration: none;
+                    transition: 500ms;
+
+
+
+                    &:hover {
+                        color: white;
+                    }
+
+                    .ri-linkedin-fill,
+                    .ri-instagram-fill,
+                    .ri-twitter-x-fill {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .phone,
+    .email {
+        color: rgba(245, 245, 245, 0.658);
+        text-decoration: none;
+
+
+    }
+
+    span {
+        font-size: 0.8rem;
+    }
+
+    span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: whitesmoke;
+        padding: 0rem 1rem;
+
+
+
+        .left {
+            display: flex;
+            mix-blend-mode: multiply;
+            padding-top: 0.3rem;
+            gap: 1rem;
+            cursor: pointer;
+
+
+
+            // h1 {
+            //     display: none;
+            //     cursor: pointer;
+            // }
+        }
+
+        .middle {
+            display: none; // Hidden on mobile by default
+
+            .desktop-menu {
+                display: flex;
+                gap: 1.5rem;
+
+
+
+                a {
+                    text-decoration: none;
+                    color: #284888;
+                    color: rgba(255, 0, 0, 0.582);
+                    font-size: 1rem;
+                    transition: color 0.3s ease;
+                    font-family: "Funnel Display";
+
+
+
+                    &:hover {
+                        color: darken(#284888, 15%);
+                    }
+                }
+
+            }
+
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+
+
+            .Get-in-touch {
+                display: inline-block;
+                padding: 0.5rem 1rem;
+                border: none;
+                border-radius: 0.5rem;
+                background-color: #FFAB5B;
+                color: white;
+                font-size: 0.8rem;
+                font-weight: 600;
+                // text-transform: uppercase;
+                letter-spacing: 0.05rem;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                text-decoration: none;
+
+
+
+                &:hover {
+                    background-color: darken(#FFAB5B, 10%);
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                }
+            }
+
+            >a {
+                position: fixed;
+                top: 52rem;
+                right: 0.5rem;
+                z-index: 1000;
+                // display: none; // Hide WhatsApp button on mobile initially
+
+
+
+                .ri-whatsapp-line {
+                    font-size: 1.2rem;
+
+
+                }
+
+                button {
+                    border: none;
+                    background-color: #25D366;
+                    padding: 0.8rem 1.5rem;
+                    border-radius: 2rem;
+                    font-size: 1rem;
+                    color: white;
+                    font-weight: 500;
+
+
+                    cursor: pointer;
+                    // display: flex;
+                    // align-items: center;
+                    // justify-content: center;
+                    box-shadow: 0 4px 12px rgba(9, 255, 0, 0.15);
+                    transition: all 0.3s ease;
+
+
+
+                    &:hover {
+                        background-color: #128C7E;
+                        transform: translateY(-2px);
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            }
+
+            .menu-toggle {
+                font-size: 1.5rem;
+                cursor: pointer;
+                color: #284888;
+                transition: transform 0.3s ease;
+                z-index: 1001;
+            }
+        }
+    }
+
+    // Mobile Menu Styles
+    .mobile-menu-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+
+        &.open {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -70%;
+        width: 70%;
+        height: 100%;
+        background-color: white;
+        z-index: 999;
+        transition: transform 0.3s ease-out;
+        box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+
+        &.open {
+            transform: translateX(-100%);
+        }
+
+        .mobile-menu-items {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 5rem 2rem;
+
+            position: fixed;
+            /* or absolute depending on layout */
+            z-index: 9999;
+            /* Make sure it's higher than other elements */
+            top: 0;
+            // left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: white;
+
+            a {
+                text-decoration: none;
+                color: #284888;
+                font-size: 1.2rem;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: darken(#284888, 15%);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 769px) {
+    .nav-section {
+
+        .top {
+
+            .right {
+
+                .social-media {
+
+                    >a {
+                        font-size: 1rem;
+                        padding: 0.05rem;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+
+            .left {
+
+                // h1 {
+                //     display: initial;
+                //     font-size: 1.5rem;
+                //     line-height: 1.5rem;
+                //     padding-top: 0.2rem;
+                //     color: #304064;
+
+                //     // font-family: "Funnel Display", sans-serif;
+                //     // font-optical-sizing: auto;
+                //     // font-weight: 900;
+                //     // font-style: normal;
+
+                //     // font-family: 'Montserrat', sans-serif;
+                //     // font-weight: 800;
+                //     // /* Extra-Bold */
+                //     // letter-spacing: 0.5px;
+
+                //     // font-family: 'Playfair Display', serif;
+                //     font-weight: 900;
+                //     // /* Bold */
+                //     letter-spacing: 1px;
+                //     font-family: montserrat;
+
+                //     &:hover {
+                //         cursor: pointer;
+                //     }
+                // }
+            }
+
+            .middle {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                margin-right: -10rem;
+
+                .desktop-menu {
+                    // position: static;
+                    position: relative;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 2.2rem;
+                    padding: 0;
+
+                    >a {
+                        color: #284888;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                        position: relative;
+                        padding: 0.5rem 0;
+
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            width: 0;
+                            height: 2px;
+                            background-color: #284888;
+                            transition: width 0.3s ease;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                        }
+
+                        .ri-arrow-right-fill {
+                            font-size: 1rem;
+                            // margin-left: -0.3rem;
+                        }
+                    }
+
+                    .service-container {
+                        position: relative;
+
+                        >a {
+                            font-size: 1.2rem;
+                            display: flex;
+
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 0;
+                                height: 2px;
+                                background-color: #284888;
+                                transition: width 0.3s ease;
+                                margin-bottom: -0.5rem;
+                            }
+
+                            &:hover::after {
+                                width: 100%;
+                            }
+
+                            .ri-arrow-down-s-fill {
+                                margin-top: 0.2rem;
+                            }
+                        }
+
+                        .option {
+                            position: absolute;
+                            top: 2.2rem;
+                            left: 0;
+                            width: 200px;
+                            background-color: white;
+                            border-radius: 0.5rem;
+                            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                            z-index: 1000;
+                            display: none;
+                            flex-direction: column;
+                            padding: 0.5rem 0;
+                            animation: slideDown 0.5s forwards;
+                            cursor: pointer;
+
+                            .options {
+                                padding: 0.75rem 1rem;
+                                color: #284888;
+                                transition: all 0.3s ease;
+
+                                &:hover {
+                                    background-color: #dfdddd;
+                                }
+                            }
+                        }
+
+                        &:hover .option {
+                            display: flex;
+                        }
+
+                        @keyframes slideDown {
+                            from {
+                                transform: translateY(-10%);
+                                opacity: 0;
+                            }
+
+                            to {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .right {
+
+                .Get-in-touch {
+                    padding: 0.7rem 0.8rem;
+                    font-size: 0.9rem;
+                }
+
+                .ri-menu-line,
+                .ri-close-large-line {
+                    display: none;
+                }
+
+                >a {
+                    // position: relative;
+                    position: initial;
+
+                    button {
+                        padding: 0.8rem 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.testimonials-section {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin-bottom: 3rem;
+
+        h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+        }
+    }
+
+    .testimonials-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .testimonial-card {
+        background: white;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: left;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+
+        .rating {
+            color: #f39c12;
+            margin-bottom: 1rem;
+        }
+
+        .quote {
+            font-style: italic;
+            color: #34495e;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .client-info {
+            h3 {
+                color: #2c3e50;
+                margin-bottom: 0.2rem;
+            }
+
+            p {
+                color: #7f8c8d;
+                font-size: 0.9rem;
+            }
+        }
+    }
+
+    .cta {
+        margin-top: 3rem;
+
+        p {
+            margin-bottom: 1.5rem;
+            color: #34495e;
+            font-size: 1.2rem;
+        }
+
+        .cta-button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 0.8rem 2rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+
+            &:hover {
+                background: #2980b9;
+            }
+        }
+    }
+}
