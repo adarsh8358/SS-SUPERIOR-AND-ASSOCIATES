@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Contact.scss';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
 
@@ -21,19 +22,54 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Here you would typically send the data to your backend
+  //   console.log('Form submitted:', formData);
+  //   alert('Thank you! We will contact you shortly.');
+  //   setFormData({
+  //     name: '',
+  //     mobile: '',
+  //     email: '',
+  //     message: '',
+  //     agreeTerms: false
+  //   });
+  // };
+
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the data to your backend
-    console.log('Form submitted:', formData);
-    alert('Thank you! We will contact you shortly.');
-    setFormData({
-      name: '',
-      mobile: '',
-      email: '',
-      message: '',
-      agreeTerms: false
-    });
+    try {
+      const res = await fetch('http://localhost:3000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          phone: formData.mobile, // Use 'phone' to match backend schema
+          email: formData.email,
+          message: formData.message,
+          agreeTerms: formData.agreeTerms
+        })
+      });
+      if (res.ok) {
+        toast.success('Message sent!');
+        setFormData({
+          name: '',
+          mobile: '',
+          email: '',
+          message: '',
+          agreeTerms: false
+        });
+      } else {
+        toast.error('Failed to send message.');
+      }
+    } catch (err) {
+      toast.error('Error connecting to server.');
+    }
   };
+
+  // ...rest of your component...
+
 
   return (
     <div className="help-contact">

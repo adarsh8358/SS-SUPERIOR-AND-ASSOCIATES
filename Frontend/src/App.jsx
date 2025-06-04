@@ -7,6 +7,10 @@ import Contact from './pages/contact/Contact'
 import About from './pages/about/About'
 import Help from './pages/help/Help'
 
+import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 // import PrivacyPolicy from './pages/privacypolicy/PrivacyPolicy'
 // import TermsOfService from './pages/termsofservice/TermsOfService'
 // import Disclaimer from './pages/disclaimer/Disclaimer'
@@ -18,6 +22,7 @@ const App = () => {
   return (
     <div className="scroll-container">
       <BrowserRouter> {/* ✅ Wrap everything in BrowserRouter */}
+          <ToastContainer position="top-right" autoClose={3000} />
         <ScrollToTop />
         <Nav />
         <Routes> {/* ✅ Use Routes instead of Router */}
