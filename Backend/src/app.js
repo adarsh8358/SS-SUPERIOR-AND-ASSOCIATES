@@ -7,8 +7,13 @@ import helpRoutes from './routes/help.routes.js';
 const app = express();
 
 // Enable CORS for all origins (or specify origin if you want)
+// app.use(cors({
+//   origin: 'http://localhost:5173'
+// }));
+
 app.use(cors({
-  origin: 'http://localhost:5173'
+  origin: ['https://sssuperiorassociates.com', 'https://www.sssuperiorassociates.com'],
+  credentials: true
 }));
 
 app.use(express.json());
