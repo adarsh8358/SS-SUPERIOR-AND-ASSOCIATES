@@ -1,65 +1,43 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Contact.scss';
 import { Link } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { useForm } from 'react-hook-form'; // Add this import
 
 const Contact = () => {
-
-
-  const [formData, setFormData] = useState({
-    name: '',
-    mobile: '',
-    email: '',
-    message: '',
-    agreeTerms: false
+  // Initialize react-hook-form
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting }
+  } = useForm({
+    defaultValues: {
+      name: '',
+      mobile: '',
+      email: '',
+      message: '',
+      agreeTerms: false
+    }
   });
 
-  const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: type === 'checkbox' ? checked : value
-    }));
-  };
-
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   // Here you would typically send the data to your backend
-  //   console.log('Form submitted:', formData);
-  //   alert('Thank you! We will contact you shortly.');
-  //   setFormData({
-  //     name: '',
-  //     mobile: '',
-  //     email: '',
-  //     message: '',
-  //     agreeTerms: false
-  //   });
-  // };
-
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // Update handleSubmit to use react-hook-form
+  const onSubmit = async (data) => {
     try {
       const res = await fetch('http://localhost:3000/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name: formData.name,
-          phone: formData.mobile, // Use 'phone' to match backend schema
-          email: formData.email,
-          message: formData.message,
-          agreeTerms: formData.agreeTerms
+          name: data.name,
+          phone: data.mobile, // Use 'phone' to match backend schema
+          email: data.email,
+          message: data.message,
+          agreeTerms: data.agreeTerms
         })
       });
       if (res.ok) {
         toast.success('Message sent!');
-        setFormData({
-          name: '',
-          mobile: '',
-          email: '',
-          message: '',
-          agreeTerms: false
-        });
+        reset();
       } else {
         toast.error('Failed to send message.');
       }
@@ -68,15 +46,13 @@ const Contact = () => {
     }
   };
 
-  // ...rest of your component...
-
-
   return (
     <div className="help-contact">
       <h1 className="help-title">Contact</h1>
       <p className="help-subtitle">We're here to assist you with any questions or concerns</p>
 
       <div className="contact-options">
+        {/* ...existing contact cards... */}
         <div className="contact-card">
           <div className="contact-icon phone-icon"></div>
           <h3>Phone Support</h3>
@@ -86,7 +62,6 @@ const Contact = () => {
             <li>Hours: Monday-Saturday, 10AM-7PM (EST)</li>
           </ul>
         </div>
-
         <div className="contact-card">
           <div className="contact-icon email-icon"></div>
           <h3>Email Support</h3>
@@ -96,7 +71,6 @@ const Contact = () => {
             <li>Feedback: <Link to="mailto:feedback@example.com">feedback@example.com</Link></li>
           </ul>
         </div>
-
         <div className="contact-card">
           <div className="contact-icon social-icon"></div>
           <h3>Social Media</h3>
@@ -115,13 +89,6 @@ const Contact = () => {
             </Link>
           </div>
         </div>
-
-        {/* <div className="contact-card">
-          <div className="contact-icon chat-icon"></div>
-          <h3>Live Chat</h3>
-          <p>Available on our website during business hours</p>
-          <button className="chat-btn">Start Chat</button>
-        </div> */}
       </div>
 
       <div className="callback-form-section">
@@ -129,18 +96,16 @@ const Contact = () => {
           <h2>Get-in-Touch</h2>
           <p>Fill out the form below and we'll get back to you as soon as possible</p>
 
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div className="form-group">
               <label htmlFor="name">Full Name*</label>
               <input
                 type="text"
                 id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                required
+                {...register('name', { required: 'Full name is required' })}
                 placeholder="Enter your full name"
               />
+              {errors.name && <span style={{ color: 'red' }} className="error">{errors.name.message}</span>}
             </div>
 
             <div className="form-group">
@@ -148,13 +113,16 @@ const Contact = () => {
               <input
                 type="tel"
                 id="mobile"
-                name="mobile"
-                value={formData.mobile}
-                onChange={handleChange}
-                required
+                {...register('mobile', {
+                  required: 'Mobile number is required',
+                  pattern: {
+                    value: /^[0-9]{10,15}$/,
+                    message: 'Enter a valid mobile number'
+                  }
+                })}
                 placeholder="Enter your mobile number"
-                pattern="[0-9]{10,15}"
               />
+              {errors.mobile && <span style={{ color: 'red' }} className="error">{errors.mobile.message}</span>}
             </div>
 
             <div className="form-group">
@@ -162,21 +130,23 @@ const Contact = () => {
               <input
                 type="email"
                 id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                required
-                placeholder="Enter your email address"
+                {...register('email', {
+                  required: 'Email is required',
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: 'Enter a valid email address'
+                  }
+                })}
+                placeholder="Enter your email address (optional)"
               />
+              {errors.email && <span style={{ color: 'red' }} className="error">{errors.email.message}</span>}
             </div>
 
             <div className="form-group">
               <label htmlFor="message">Your Message</label>
               <textarea
                 id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
+                {...register('message')}
                 rows="4"
                 placeholder="How can we help you?"
               ></textarea>
@@ -186,18 +156,16 @@ const Contact = () => {
               <input
                 type="checkbox"
                 id="agreeTerms"
-                name="agreeTerms"
-                checked={formData.agreeTerms}
-                onChange={handleChange}
-                required
+                {...register('agreeTerms', { required: 'You must agree to the terms' })}
               />
               <label htmlFor="agreeTerms">
                 I agree to the terms and conditions and privacy policy
               </label>
+              {errors.agreeTerms && <span style={{ color: 'red' }} className="error">{errors.agreeTerms.message}</span>}
             </div>
 
-            <button type="submit" className="submit-btn">
-              Request Call Back
+            <button type="submit" className="submit-btn" disabled={isSubmitting}>
+              {isSubmitting ? 'Submitting...' : 'Request Call Back'}
             </button>
           </form>
         </div>

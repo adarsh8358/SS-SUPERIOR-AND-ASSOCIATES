@@ -75,7 +75,7 @@ const Help = () => {
                     message: 'Enter a valid email address'
                   }
                 })}
-                placeholder="Enter your email address"
+                placeholder="Enter your email address (optional)"
               />
               {errors.email && <span style={{ color: 'red' }}>{errors.email.message}</span>}
             </div>

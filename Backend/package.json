@@ -2,10 +2,10 @@
   "name": "Backend",
   "version": "1.0.0",
   "description": "Backend for handling contact form submissions and storing data in MongoDB.",
-  "main": "src/app.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "cors": "^2.8.5",
