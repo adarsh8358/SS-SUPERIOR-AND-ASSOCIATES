@@ -4,9 +4,10 @@
   "description": "Backend for handling contact form submissions and storing data in MongoDB.",
   "main": "server.js",
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+"scripts": {
+  "start": "node server.js",
+  "test": "echo \"Error: no test specified\" && exit 1"
+},
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
