@@ -12,7 +12,7 @@ const app = express();
 // }));
 
 app.use(cors({
-  origin: ['https://sssuperiorassociates.com', 'https://www.sssuperiorassociates.com'],
+  origin: ['http://localhost:5173',],
   credentials: true
 }));
 
