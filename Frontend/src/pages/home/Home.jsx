@@ -9,6 +9,10 @@ import logo from '../../assets/logo.svg'
 import ServicesContent from '../../components/ServicesContent'
 import ServicesOptions from '../../components/ServicesOptions'
 import Testimonials from '../../components/testimonials';
+// import { toast, ToastContainer } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+// import axios from 'axios';
+import ContactForm from '../../components/ContactForm';
 
 const Home = () => {
 
@@ -153,7 +157,9 @@ const Home = () => {
                     <div className="form">
                         <h1>Get-in-Touch</h1>
 
-                        <form>
+                        <ContactForm />
+
+                        {/* <form>
 
                             <input type="name" placeholder='fullname' />
                             <input type="text" placeholder='mob. no.' />
@@ -164,7 +170,7 @@ const Home = () => {
                             <button type='submit'>submit</button>
                             <button type='reset'>reset</button>
 
-                        </form>
+                        </form> */}
 
                     </div>
                 </div>
