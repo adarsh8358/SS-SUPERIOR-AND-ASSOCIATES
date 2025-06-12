@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+import './ContactForm.scss'; // Ensure you have a CSS file for styling
 
 const ContactForm = () => {
   const {
@@ -13,7 +14,7 @@ const ContactForm = () => {
  const onSubmit = async (data) => {
   try {
     const res = await fetch(
-      `${process.env.REACT_APP_API_URL}/api/contact`,
+      `http://localhost:3000/api/contact`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -21,20 +22,20 @@ const ContactForm = () => {
       }
     );
       if (res.ok) {
-        toast.success('Message sent!');
+        toast.success("✨ Success! We appreciate your interest. Let's connect soon.");
         reset();
       } else {
-        toast.error('Failed to send message.');
+        toast.error("❌ Submission failed. Check your inputs and try again.");
       }
     } catch (err) {
-      toast.error('Error connecting to server.');
+      toast.error("⚠️ Oops! Something went wrong. Please try again later.");
     }
   };
 
   // Add this handler for reset
   const onReset = () => {
     reset();
-    toast.info('Form reset!');
+    // toast.info('Form reset!');
   };
 
   return (
@@ -74,6 +75,15 @@ const ContactForm = () => {
           placeholder="Enter your query here..."
         />
         {errors.message && <span style={{ color: 'red' }}>{errors.message.message}</span>}
+
+        <label htmlFor="agreeTerms">
+         <input
+                type="checkbox"
+                id="agreeTerms"
+                {...register('agreeTerms', { required: 'You must agree to the terms' })}
+              />
+                I agree to the terms and conditions and privacy policy
+              </label>
 
         <button type="submit">Submit</button>
         <button type="reset">Reset</button>

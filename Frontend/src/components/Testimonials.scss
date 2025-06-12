@@ -80,8 +80,8 @@
             background: #3498db;
             color: white;
             border: none;
-            padding: 0.8rem 2rem;
-            font-size: 1rem;
+            padding: 0.8rem 1rem;
+            font-size: 0.8rem;
             border-radius: 4px;
             cursor: pointer;
             transition: background 0.3s ease;
@@ -92,4 +92,20 @@
             }
         }
     }
+}
+
+
+@media screen and (min-width: 768px) {
+    .testimonials-section {
+        
+
+        .cta{
+            
+            .cta-button{
+                font-size: 1rem;
+                padding: 0.8rem 2rem;
+            }
+        }
+    }
+    
 }

@@ -14,30 +14,30 @@ export default function ServicesContent({ page = "ALL" }) {
       { id: 6, category: "START-UP-&-MSME", title: "Startup Registration", icon: "🚀", description: "Here we serve End-to-end startup registration services", /*/*price: "₹8,999 onwards"*/ },
     ],
     GST: [
-      { id: 1, title: "GST Registration", icon: "📋", description: "Complete assistance with GST registration process", /*price: "₹1,999 onwards"*/ },
-      { id: 2, title: "GST Return Filing", icon: "📊", description: "Monthly/quarterly or Annually GST return filing services", /*price: "₹1,499/month"*/ },
-      { id: 3, title: "GST Advisory", icon: "💡", description: /*"Expert consultation on GST matters"*/ "Specialized expert consultation on GST-related matters", /*price: "₹999/session"*/ },
-      { id: 4, title: "GST Audit", icon: "🔍", description: /*"Comprehensive GST audit services"*/ "Comprehensive GST audit and compliance services", /*price: "₹5,999 onwards"*/ },
+      { id: 1, title: "GST Registration", category: "GST", icon: "📋", description: "Complete assistance with GST registration process", /*price: "₹1,999 onwards"*/ },
+      { id: 2, title: "GST Return Filing", category: "GST", icon: "📊", description: "Monthly/quarterly or Annually GST return filing services", /*price: "₹1,499/month"*/ },
+      { id: 3, title: "GST Advisory", category: "GST", icon: "💡", description: /*"Expert consultation on GST matters"*/ "Specialized expert consultation on GST-related matters", /*price: "₹999/session"*/ },
+      { id: 4, title: "GST Audit", category: "GST", icon: "🔍", description: /*"Comprehensive GST audit services"*/ "Comprehensive GST audit and compliance services", /*price: "₹5,999 onwards"*/ },
     ],
     "INCOME-TAX": [
-      { id: 1, title: "ITR Filing", icon: "💰", description: "Income Tax Return filing for individuals and businesses", /*price: "₹999 onwards"*/ },
-      { id: 2, title: "Tax Planning", icon: "📈", description: /*"Strategic tax saving solutions"*/ "Proven strategic tax saving solutions for businesses", /*price: "₹2,499/session"*/ },
-      { id: 3, title: "TDS Compliance", icon: "⚖️", description: /*"Complete TDS filing and advisory"*/ "Complete and compliant TDS filing with expert advisory", /*price: "₹1,999/month"*/ },
+      { id: 1, title: "ITR Filing", category: "INCOME-TAX", icon: "💰", description: "Income Tax Return filing for individuals and businesses", /*price: "₹999 onwards"*/ },
+      { id: 2, title: "Tax Planning", category: "INCOME-TAX", icon: "📈", description: /*"Strategic tax saving solutions"*/ "Proven strategic tax saving solutions for businesses", /*price: "₹2,499/session"*/ },
+      { id: 3, title: "TDS Compliance", category: "INCOME-TAX", icon: "⚖️", description: /*"Complete TDS filing and advisory"*/ "Complete and compliant TDS filing with expert advisory", /*price: "₹1,999/month"*/ },
     ],
     "ACCOUNTING-&-AUDITING": [
-      { id: 1, title: "Bookkeeping", icon: "🧾", description: "Professional bookkeeping services", /*price: "₹3,999/month"*/ },
-      { id: 2, title: "Financial Statements", icon: "📑", description: "Preparation of financial statements", /*price: "₹5,999 onwards"*/ },
-      { id: 3, title: "Statutory Audit", icon: "🔎", description: "Comprehensive audit services", /*price: "₹8,999 onwards"*/ },
+      { id: 1, title: "Bookkeeping", category: "ACCOUNTING-&-AUDITING", icon: "🧾", description: "Professional bookkeeping services", /*price: "₹3,999/month"*/ },
+      { id: 2, title: "Financial Statements", category: "ACCOUNTING-&-AUDITING", icon: "📑", description: "Preparation of financial statements", /*price: "₹5,999 onwards"*/ },
+      { id: 3, title: "Statutory Audit", category: "ACCOUNTING-&-AUDITING", icon: "🔎", description: "Comprehensive audit services", /*price: "₹8,999 onwards"*/ },
     ],
     "COMPANY-COMPLIANCES": [
-      { id: 1, title: "ROC Compliance", icon: "🏢", description: "Annual compliance for private limited", /*price: "₹12,999/year"*/ },
-      { id: 2, title: "Company Incorporation", icon: "🆕", description: "End-to-end company registration", /*price: "₹7,999 onwards"*/ },
-      { id: 3, title: "Board Meetings", icon: "👥", description: "Minutes preparation and compliance", /*price: "₹2,499/meeting"*/ },
+      { id: 1, title: "ROC Compliance", category: "COMPANY-COMPLIANCES", icon: "🏢", description: "Annual compliance for private limited", /*price: "₹12,999/year"*/ },
+      { id: 2, title: "Company Incorporation", category: "COMPANY-COMPLIANCES", icon: "🆕", description: "End-to-end company registration", /*price: "₹7,999 onwards"*/ },
+      { id: 3, title: "Board Meetings", category: "COMPANY-COMPLIANCES", icon: "👥", description: "Minutes preparation and compliance", /*price: "₹2,499/meeting"*/ },
     ],
     "START-UP-&-MSME": [
-      { id: 1, title: "Startup Registration", icon: "🚀", description: "End-to-end startup registration services", /*price: "₹8,999 onwards"*/ },
-      { id: 2, title: "MSME Registration", icon: "🏭", description: "Udyam registration assistance", /*price: "₹1,999"*/ },
-      { id: 3, title: "Startup Advisory", icon: "💼", description: "Business setup and compliance guidance", /*price: "₹3,499/session"*/ },
+      { id: 1, title: "Startup Registration", category: "START-UP-&-MSME", icon: "🚀", description: "End-to-end startup registration services", /*price: "₹8,999 onwards"*/ },
+      { id: 2, title: "MSME Registration", category: "START-UP-&-MSME", icon: "🏭", description: "Udyam registration assistance", /*price: "₹1,999"*/ },
+      { id: 3, title: "Startup Advisory", category: "START-UP-&-MSME", icon: "💼", description: "Business setup and compliance guidance", /*price: "₹3,499/session"*/ },
     ]
   };
 

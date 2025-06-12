@@ -22,10 +22,10 @@ const Help = () => {
         toast.success('Thank you! We will contact you shortly.');
         reset();
       } else {
-        toast.error('Failed to send your request.');
+        toast.error("❌ Submission failed. Check your inputs and try again.");
       }
     } catch (err) {
-      toast.error('Error connecting to server.');
+      toast.error("⚠️ Oops! Something went wrong. Please try again later.");
     }
   };
 
@@ -64,7 +64,7 @@ const Help = () => {
               {errors.phone && <span style={{ color: 'red' }}>{errors.phone.message}</span>}
             </div>
 
-            <div className="form-group">
+            {/* <div className="form-group">
               <label htmlFor="email">Email Address*</label>
               <input
                 id="email"
@@ -78,7 +78,7 @@ const Help = () => {
                 placeholder="Enter your email address (optional)"
               />
               {errors.email && <span style={{ color: 'red' }}>{errors.email.message}</span>}
-            </div>
+            </div> */}
 
             <div className="form-group">
               <label htmlFor="message">Your Message</label>

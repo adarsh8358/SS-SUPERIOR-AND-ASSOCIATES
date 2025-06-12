@@ -36,13 +36,13 @@ const Contact = () => {
         })
       });
       if (res.ok) {
-        toast.success('Message sent!');
+        toast.success("🎉 We've received your details! Sit tight, our team will be in touch soon.");
         reset();
       } else {
-        toast.error('Failed to send message.');
+        toast.error("❌ Submission failed. Check your inputs and try again.");
       }
     } catch (err) {
-      toast.error('Error connecting to server.');
+      toast.error("⚠️ Oops! Something went wrong. Please try again later.");
     }
   };
 

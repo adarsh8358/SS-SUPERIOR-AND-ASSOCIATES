@@ -68,7 +68,7 @@
                     .ri-linkedin-fill,
                     .ri-instagram-fill,
                     .ri-twitter-x-fill {
-                        font-size: 1.2rem;
+                        font-size: 1rem;
                     }
                 }
             }
@@ -84,7 +84,7 @@
     }
 
     span {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     span:hover {
@@ -300,13 +300,34 @@
 
         .top {
 
+            .left{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                color: rgba(245, 245, 245, 0.658);
+
+                .ri-phone-fill,
+                .ri-mail-fill {
+                    font-size: 1.2rem;
+                    color: rgba(245, 245, 245, 0.658);
+                }
+
+                .phone,
+                .email {
+                    font-size: 0.9rem;
+                    text-decoration: none;
+                    color: rgba(245, 245, 245, 0.658);
+                    margin-left: 0.5rem;
+                }
+            }
+
             .right {
 
                 .social-media {
 
                     >a {
                         font-size: 1rem;
-                        padding: 0.05rem;
+                        // padding: 0.05rem;
                     }
                 }
             }

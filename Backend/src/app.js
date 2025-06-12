@@ -6,13 +6,9 @@ import helpRoutes from './routes/help.routes.js';
 
 const app = express();
 
-// Enable CORS for all origins (or specify origin if you want)
-// app.use(cors({
-//   origin: 'http://localhost:5173'
-// }));
 
 app.use(cors({
-  origin: ['http://localhost:5173',],
+  origin: ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true
 }));
 
