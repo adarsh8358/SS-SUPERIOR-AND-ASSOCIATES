@@ -14,7 +14,8 @@ const ContactForm = () => {
  const onSubmit = async (data) => {
   try {
     const res = await fetch(
-      `http://localhost:3000/api/contact`,
+      // `http://localhost:3000/api/contact`,
+      `https://ss-superior-and-associates-backend.onrender.com/api/contact`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },

@@ -13,7 +13,7 @@ const Help = () => {
 
   const onSubmit = async (data) => {
     try {
-      const res = await fetch('http://localhost:3000/api/help', {
+      const res = await fetch(`https://ss-superior-and-associates-backend.onrender.com/api/help`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
