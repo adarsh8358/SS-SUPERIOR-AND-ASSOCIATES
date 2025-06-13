@@ -8,7 +8,7 @@ import './Responsive.scss'
 import logo from '../../assets/logo.svg'
 import ServicesContent from '../../components/ServicesContent'
 import ServicesOptions from '../../components/ServicesOptions'
-import Testimonials from '../../components/testimonials';
+import Testimonials from '../../components/Testimonials';
 // import { toast, ToastContainer } from 'react-toastify';
 // import 'react-toastify/dist/ReactToastify.css';
 // import axios from 'axios';
