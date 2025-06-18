@@ -56,6 +56,7 @@ const Contact = () => {
         <div className="contact-card">
           <div className="contact-icon phone-icon"></div>
           <h3>Phone Support</h3>
+          <br />
           <ul>
             <li>Mobile-1: <Link to="tel:+91 9111656571">+91 9111656571</Link></li>
             <li>Mobile-2: <Link to="tel:7898156085">+91 7898156085</Link></li>
@@ -65,15 +66,17 @@ const Contact = () => {
         <div className="contact-card">
           <div className="contact-icon email-icon"></div>
           <h3>Email Support</h3>
+          <br />
           <ul>
             <li>General: <Link to="mailto:sssuperior213@gmail.com">sssuperior213@gmail.com</Link></li>
-            <li>Technical: <Link to="mailto:support@example.com">support@example.com</Link></li>
-            <li>Feedback: <Link to="mailto:feedback@example.com">feedback@example.com</Link></li>
+            <li>Technical: <Link to="mailto:support@example.com">shiv.kush2323@gmail.com</Link></li>
+            {/* <li>Feedback: <Link to="mailto:feedback@example.com">feedback@example.com</Link></li> */}
           </ul>
         </div>
         <div className="contact-card">
           <div className="contact-icon social-icon"></div>
           <h3>Social Media</h3>
+          <br/ >
           <div className="social-links">
             <Link to="https://wa.me/919111656571?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp">
               WhatsApp
