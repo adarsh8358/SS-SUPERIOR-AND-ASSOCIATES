@@ -8,7 +8,8 @@ const app = express();
 
 
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'],
+  origin: ['http://localhost:3000', 'http://localhost:5173', 'https://ss-superior-and-associates-frontend.onrender.com'],
+
   credentials: true
 }));
 
