@@ -70,7 +70,7 @@ const Nav = () => {
                                 <i className="ri-instagram-fill" />
                             </Link>
                             <Link
-                                to="https://twitter.com/yourusername"
+                                to="https://x.com/SHIVKUSHWA95210?t=hYFxRxRdLMiMlrmoCbkQXQ&s=08"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-500 hover:text-blue-400 transition-colors text-2xl"

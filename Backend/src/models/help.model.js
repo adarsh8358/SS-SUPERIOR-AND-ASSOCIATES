@@ -6,6 +6,6 @@ const helpSchema = new mongoose.Schema({
   email: String,
   message: String,
   createdAt: { type: Date, default: Date.now }
-});
+}, {timestamps: true});
 
 export default mongoose.model('Help', helpSchema);
