@@ -76,7 +76,7 @@ const Contact = () => {
         <div className="contact-card">
           <div className="contact-icon social-icon"></div>
           <h3>Social Media</h3>
-          <br/ >
+          <br />
           <div className="social-links">
             <Link to="https://wa.me/919111656571?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank" rel="noopener noreferrer" className="social-btn whatsapp">
               WhatsApp
@@ -87,7 +87,8 @@ const Contact = () => {
             <Link to="https://www.linkedin.com/in/shiv-kushwaha-57bbba190" target="_blank" rel="noopener noreferrer" className="social-btn linkedin">
               LinkedIn
             </Link>
-            <Link to="https://twitter.com/OurOfficialX" target="_blank" rel="noopener noreferrer" className="social-btn twitter">
+            <Link
+              to="https://x.com/SHIVKUSHWA95210?t=hYFxRxRdLMiMlrmoCbkQXQ&s=08" target="_blank" rel="noopener noreferrer" className="social-btn twitter">
               X/Twitter
             </Link>
           </div>
