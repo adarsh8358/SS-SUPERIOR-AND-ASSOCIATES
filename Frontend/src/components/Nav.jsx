@@ -109,7 +109,10 @@ const Nav = () => {
                 <div className="bottom">
 
                     <div className="left">
-                        <Link to="https://sssuperiorassociates.com/" className="logo-link">
+                        <Link
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to="https://sssuperiorassociates.com/" className="logo-link">
                             <img height={60} src={logo} alt="SS SUPERIOR & ASSOCIATES" />
                         </Link>
                         {/* <h1>SS SUPERIOR <br /> & ASSOCIATES</h1> */}
