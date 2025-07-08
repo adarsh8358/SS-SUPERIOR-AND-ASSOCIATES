@@ -118,6 +118,8 @@ const Nav = () => {
                     <div className="middle">
                         <div className="desktop-menu">
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -130,6 +132,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/services"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -142,6 +146,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/contact"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -154,6 +160,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/about"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -166,6 +174,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/help"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -200,6 +210,7 @@ const Nav = () => {
                 <div ref={menuRef} className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                     <div className="mobile-menu-items">
                         <NavLink
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -212,6 +223,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/services"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -224,6 +237,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/contact"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -236,6 +251,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/about"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -248,6 +265,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/help"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
