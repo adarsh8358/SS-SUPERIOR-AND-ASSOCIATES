@@ -370,7 +370,8 @@
                 flex: 1;
                 display: flex;
                 justify-content: center;
-                margin-right: -10rem;
+                // margin-right: -10rem;
+                // padding-left: 5rem;
 
                 .desktop-menu {
                     // position: static;
@@ -378,7 +379,7 @@
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 2.2rem;
+                    gap: 3rem;
                     padding: 0;
 
                     >a {
