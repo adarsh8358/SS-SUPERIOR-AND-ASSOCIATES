@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Link, NavLink } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // ✅ Removed `Router`
 import './Nav.scss';
@@ -38,6 +38,30 @@ const Nav = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [lastScrollY]);
+
+    const location = useLocation();
+
+    const menuRef = useRef();
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuOpen && !menuOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [!menuOpen]);
+
+
+    useEffect(() => {
+        // Close the mobile menu whenever the route changes
+        setMenuOpen(false);
+    }, [location.pathname]);
+
 
     return (
         <>
@@ -85,7 +109,10 @@ const Nav = () => {
                 <div className="bottom">
 
                     <div className="left">
-                        <Link to="https://sssuperiorassociates.com/" className="logo-link">
+                        <Link
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to="https://sssuperiorassociates.com/" className="logo-link">
                             <img height={60} src={logo} alt="SS SUPERIOR & ASSOCIATES" />
                         </Link>
                         {/* <h1>SS SUPERIOR <br /> & ASSOCIATES</h1> */}
@@ -94,6 +121,8 @@ const Nav = () => {
                     <div className="middle">
                         <div className="desktop-menu">
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -106,6 +135,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/services"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -118,6 +149,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/contact"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -130,6 +163,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/about"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -142,6 +177,8 @@ const Nav = () => {
                             </NavLink>
 
                             <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/help"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -173,9 +210,11 @@ const Nav = () => {
                 <div className={`mobile-menu-overlay ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(false)}></div>
 
                 {/* Mobile Menu */}
-                <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+                <div ref={menuRef} className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                     <div className="mobile-menu-items">
                         <NavLink
+                        ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -188,6 +227,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/services"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -200,6 +241,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/contact"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -212,6 +255,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/about"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
@@ -224,6 +269,8 @@ const Nav = () => {
                         </NavLink>
 
                         <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/help"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',

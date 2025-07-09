@@ -39,11 +39,11 @@ const Footer = () => {
                 <div className="footer-column quick-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                        <li><Link to="/about">About Us</Link></li>
-                        <li><Link to="/help">Help</Link></li>
+                        <li><Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/">Home</Link></li>
+                        <li><Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/services">Services</Link></li>
+                        <li><Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/contact">Contact</Link></li>
+                        <li><Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/about">About Us</Link></li>
+                        <li><Link onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} to="/help">Help</Link></li>
                     </ul>
                 </div>
 

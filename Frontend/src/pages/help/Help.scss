@@ -9,7 +9,8 @@
   transform: translateY(20px);
   animation: fadeSlideIn 1s ease-out forwards;
 
-  padding-top: 120px;
+  padding-top: 50px;
+  // margin-top: 120px;
 
   .form-container {
     max-width: 600px;
@@ -111,7 +112,7 @@
 // Responsive adjustments
 @media (max-width: 768px) {
   .callback-form-section {
-    padding: 1.5rem;
+    // padding: 1.5rem;
 
     .form-container {
       h2 {
