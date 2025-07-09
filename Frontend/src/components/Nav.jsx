@@ -39,6 +39,29 @@ const Nav = () => {
         };
     }, [lastScrollY]);
 
+    const location = useLocation();
+
+    const menuRef = useRef();
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuOpen && !menuOpen && menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [!menuOpen]);
+
+
+    useEffect(() => {
+        // Close the mobile menu whenever the route changes
+        setMenuOpen(false);
+    }, [location.pathname]);
+
     return (
         <>
             <section className={`nav-section ${showNavbar ? 'show' : 'hide'}`}>
@@ -189,6 +212,7 @@ const Nav = () => {
                 <div ref={menuRef} className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                     <div className="mobile-menu-items">
                         <NavLink
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="/"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
