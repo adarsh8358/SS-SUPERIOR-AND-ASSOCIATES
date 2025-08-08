@@ -6,6 +6,7 @@ const Services = lazy(() => import('./pages/services/Services'))
 const Contact = lazy(() => import('./pages/contact/Contact'))
 const About = lazy(() => import('./pages/about/About'))
 const Help = lazy(() => import('./pages/help/Help'))
+import PopupForm from './components/PopupForm';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -26,6 +27,7 @@ const AppContent = () => {
   return (
     <>
       <ToastContainer position="top-right" autoClose={3000} />
+      <PopupForm />
       <ScrollToTop />
       <Nav />
       <Routes>

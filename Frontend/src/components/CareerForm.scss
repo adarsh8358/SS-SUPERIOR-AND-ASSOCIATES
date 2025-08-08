@@ -1,0 +1,51 @@
+.career-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.career-form input,
+.career-form textarea {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.career-form button[type="submit"] {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.career-form label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.career-form input[type="file"] {
+  border: none;
+  padding: 0;
+}
+
+.career-form span {
+  color: red;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 768px) {
+  .career-form {
+    width: 90%;
+    margin: auto;
+  }
+
+  .career-float-btn{
+    left: 20px;
+  }
+    
+}

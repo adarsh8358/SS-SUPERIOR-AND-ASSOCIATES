@@ -178,7 +178,7 @@
 
             >a {
                 position: fixed;
-                top: 52rem;
+                top: 50rem;
                 right: 0.5rem;
                 z-index: 1000;
                 // display: none; // Hide WhatsApp button on mobile initially
@@ -192,6 +192,8 @@
                 }
 
                 button {
+                    display: none;
+
                     border: none;
                     background-color: #25D366;
                     padding: 0.8rem 1.5rem;
@@ -500,9 +502,11 @@
                 >a {
                     // position: relative;
                     position: initial;
+                    text-decoration: none;
 
                     button {
                         padding: 0.8rem 0.6rem;
+                        display: initial;
                     }
                 }
             }
