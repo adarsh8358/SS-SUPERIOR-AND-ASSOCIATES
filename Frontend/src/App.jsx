@@ -1,11 +1,17 @@
 import React, { lazy } from 'react'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-const Home = lazy(() => import('./pages/home/Home'));
-const Services = lazy(() => import('./pages/services/Services'))
-const Contact = lazy(() => import('./pages/contact/Contact'))
-const About = lazy(() => import('./pages/about/About'))
-const Help = lazy(() => import('./pages/help/Help'))
+// const Home = lazy(() => import('./pages/home/Home'));
+// const Services = lazy(() => import('./pages/services/Services'))
+// const Contact = lazy(() => import('./pages/contact/Contact'))
+// const About = lazy(() => import('./pages/about/About'))
+// const Help = lazy(() => import('./pages/help/Help'))
+import Home from './pages/home/Home';
+import Services from './pages/services/Services';
+import Contact from './pages/contact/Contact';
+import About from './pages/about/About';
+import Help from './pages/help/Help';
+
 import PopupForm from './components/PopupForm';
 
 import { ToastContainer } from 'react-toastify';
