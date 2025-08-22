@@ -421,7 +421,10 @@
                 .box1 {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.5rem;
+                    justify-content: center;
+                    // align-items: center;
+                    align-items: flex-start;
+                    // gap: 0.5rem;
                     height: 70px;
                     width: 150px;
                     // border: 1px solid black;
@@ -431,17 +434,24 @@
 
                     h1 {
                         font-size: 1.2rem;
+                        color: black;
                     }
 
                     p {
                         font-size: 0.85rem;
+                        color: black;
+                        margin-top: -1rem;
+                        margin-bottom: -0.5rem;
                     }
                 }
 
                 .box2 {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.43rem;
+                    justify-content: center;
+                    // align-items: center;
+                    align-items: flex-start;
+                    // gap: 0.43rem;
                     height: 70px;
                     width: 150px;
                     // border: 1px solid black;
@@ -451,10 +461,14 @@
 
                     h1 {
                         font-size: 1.2rem;
+                        color: black;
                     }
 
                     p {
                         font-size: 0.85rem;
+                        color: black;
+                        margin-top: -1rem;
+                        margin-bottom: -0.5rem;
                     }
                 }
             }
@@ -466,7 +480,10 @@
                 .box3 {
                     display: flex;
                     flex-direction: column;
-                    gap: 0.5rem;
+                    justify-content: center;
+                    // align-items: center;
+                    align-items: flex-start;
+                    // gap: 0.5rem;
                     height: 70px;
                     width: 150px;
                     // border: 1px solid black;
@@ -476,16 +493,22 @@
 
                     h1 {
                         font-size: 1.2rem;
+                        color: black;
                     }
 
                     p {
                         font-size: 0.85rem;
+                        color: black;
+                        margin-top: -1rem;
+                        margin-bottom: -0.5rem;
                     }
                 }
 
                 .box4 {
                     display: flex;
                     flex-direction: column;
+                    justify-content: center;
+                    // align-items: center;
                     gap: 0.2rem;
                     height: 70px;
                     width: 150px;
@@ -496,10 +519,12 @@
 
                     h1 {
                         font-size: 1.2rem;
+                        color: black;
                     }
 
                     p {
                         font-size: 0.8rem;
+                        color: black;
                     }
                 }
             }
