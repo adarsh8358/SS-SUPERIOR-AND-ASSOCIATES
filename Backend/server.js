@@ -3,7 +3,7 @@ import connect from './src/db/db.js';
 import config from './src/config/config.js';
 
 
-connect()
+connect();
 
 
 

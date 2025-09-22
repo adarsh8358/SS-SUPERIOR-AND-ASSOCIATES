@@ -12,7 +12,7 @@ import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Help from './pages/help/Help';
 
-import PopupForm from './components/PopupForm';
+// import PopupForm from './components/PopupForm';
 
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -33,7 +33,7 @@ const AppContent = () => {
   return (
     <>
       <ToastContainer position="top-right" autoClose={3000} />
-      <PopupForm />
+      {/* <PopupForm /> */}
       <ScrollToTop />
       <Nav />
       <Routes>
