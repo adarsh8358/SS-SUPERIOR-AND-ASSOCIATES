@@ -8,7 +8,7 @@ const Testimonials = () => {
             id: 1,
             name: "Rajesh Sharma",
             company: "Sharma Textiles",
-            quote: "SS Superior helped us navigate complex GST filings. Their team saved us over ₹2 lakhs in penalties with their proactive approach.",
+            quote: "SS Superior & Associates - CA in Bhopal helped us navigate complex GST filings. Their team saved us over ₹2 lakhs in penalties with their proactive approach.",
             rating: 5
         },
         {
@@ -31,7 +31,7 @@ const Testimonials = () => {
         <section className="testimonials-section">
             <div className="container">
                 <div className="header">
-                    <h1>What Our Clients Say</h1>
+                    <h2>What Our Clients Say</h2>
                     <p>Trusted by 5000+ businesses across India</p>
                 </div>
 

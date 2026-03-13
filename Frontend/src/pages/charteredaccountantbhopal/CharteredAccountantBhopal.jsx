@@ -4,8 +4,8 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
-import './Home.scss'
-import './Responsive.scss'
+// import './Home.scss'
+// import './Responsive.scss'
 import logo from '../../assets/logo.svg'
 import ServicesContent from '../../components/ServicesContent'
 import ServicesOptions from '../../components/ServicesOptions'
@@ -13,7 +13,7 @@ import Testimonials from '../../components/Testimonials';
 import ContactForm from '../../components/ContactForm';
 import CareerForm from '../../components/CareerForm';
 
-const Home = () => {
+const CharteredAccountantBhopal = () => {
 
     const [option, setOptions] = useState(false)
     const [page, setPage] = useState("home");
@@ -28,18 +28,15 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates</title>
+                <title>Chartered Accountant Bhopal | SS Superior & Associates</title>
                 <meta
                     name="description"
-                    content="Looking for a trusted CA in Bhopal ?
-                     Our professional CA Firm in Bhopal provides expert
-                      support in GST, income tax, audits, compliance, and
-                       business growth with clear, friendly guidance."
+                    content="Chartered Accountant Bhopal – SS Superior & Associates provides expert GST, income tax, audit, and compliance services with reliable guidance for businesses and individuals"
                 />
 
                 <meta
                     name="keywords"
-                    content="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates"
+                    content="Chartered Accountant Bhopal | SS Superior & Associates"
                 />
                 <link
                     rel="canonical"
@@ -114,8 +111,8 @@ const Home = () => {
                 <section className="hero-section">
                     <div className="top">
                         <div className="overlay">
-                            <h1>CA in Bhopal - SS Superior & Associates</h1>
-                            <h2>CA Firm in Bhopal - Building Trust. Enabling Growth.</h2>
+                            <h1>Chartered Accountant Bhopal -<br/>SS Superior & Associates</h1>
+                            <h2>Chartered Accountant Bhopal - Building Trust. Enabling Growth.</h2>
                             <p>SS Superior & Associates is your one-stop solution for Taxation,
                                 GST, Compliance, Audit, and Business Setup services. As a
                                 trusted Trusted Tax & Business Advisory Partner, we are committed to simplifying
@@ -144,12 +141,12 @@ const Home = () => {
                     <div className="left">
                         <div className="top">
                             <h3>Who We Are</h3>
-                            <h2>Your Trusted Tax & Business Advisory Partner - CA in Bhopal</h2>
+                            <h2>Your Trusted Tax & Business Advisory Partner - Chartered Accountant Bhopal</h2>
                         </div>
                         <div className="bottom">
 
                             <p>
-                                <strong>CA Firm in Bhopal</strong> - We specialize in <strong>Income Tax filing, GST compliance, ROC filing,
+                                 We specialize in <strong>Income Tax filing, GST compliance, ROC filing,
                                     PF & ESIC compliance, company registration, and financial reporting</strong>.
                                 Our approach is simple — clear advice, complete transparency, and full compliance.
                                 Whether you are a salaried professional, startup founder, NGO, or established
@@ -173,7 +170,7 @@ const Home = () => {
 
                     <div className="right">
 
-                        <img src="/image.jpeg" alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" />
+                        <img src="/image.jpeg" alt="Chartered Accountant Bhopal | SS Superior & Associates" />
 
                         <div className="Experience">
 
@@ -216,7 +213,7 @@ const Home = () => {
                             <p>
                                 We provide end-to-end CA services including Income Tax, GST filing,
                                 audit, business registration, compliance management, and financial advisory.
-                                Everything you need — under one trusted CA Firm in Bhopal.
+                                Everything you need — under one trusted Chartered Accountant Bhopal.
                             </p>
 
                         </div>
@@ -474,7 +471,7 @@ const Home = () => {
                             <p>
                                 Hiring a qualified CA ensures your taxes are filed correctly, your GST returns
                                 are submitted on time, and your business remains legally compliant.
-                                A professional CA in Bhopal not only helps reduce tax liability but also
+                                A professional Chartered Accountant not only helps reduce tax liability but also
                                 protects you from penalties and notices. At SS Superior & Associates,
                                 we guide individuals and businesses with practical and reliable tax solutions.
                             </p>
@@ -495,7 +492,7 @@ const Home = () => {
                             <h3>3. How long does GST registration take?</h3>
                             <p>
                                 GST registration usually takes 3 to 7 working days, depending on document
-                                accuracy and government processing time. Our CA firm in Bhopal handles
+                                accuracy and government processing time. Our Firm handles
                                 the complete process — from documentation to final approval — ensuring
                                 a smooth and hassle-free registration.
                             </p>
@@ -505,7 +502,7 @@ const Home = () => {
                         <div className="faq-item">
                             <h3>4. Do you provide online consultation services?</h3>
                             <p>
-                                Yes, as a trusted CA in Bhopal, we provide both in-office and online consultations.
+                                Yes, as a trusted Chartered Accountant, we provide both in-office and online consultations.
                                 Clients from Bhopal and across India can connect with us via phone, email,
                                 or virtual meetings for taxation, GST, audit, and business advisory services.
                                 While online consultations are convenient and time-saving, we also encourage
@@ -528,7 +525,7 @@ const Home = () => {
                         <div className="faq-item">
                             <h3>6. Do you provide services outside Bhopal?</h3>
                             <p>
-                                Yes. Although Our CA Firm in Bhopal But, we serve clients across India.
+                                Yes. Although Our Firm is in Bhopal But, we serve clients across India.
                                 Our digital compliance systems allow us to manage GST filing, ROC compliance,
                                 business incorporation, and financial reporting for clients nationwide.
                             </p>
@@ -542,4 +539,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default CharteredAccountantBhopal;

@@ -112,7 +112,7 @@ const Nav = () => {
                             ref={menuRef}
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                             to="https://sssuperiorassociates.com/" className="logo-link">
-                            <img height={60} src={logo} alt="SS SUPERIOR & ASSOCIATES" />
+                            <img height={60} src={logo} alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" />
                         </Link>
                         {/* <h1>SS SUPERIOR <br /> & ASSOCIATES</h1> */}
                     </div>
@@ -144,7 +144,7 @@ const Nav = () => {
                                     // margin: '0 10px',
                                 })}
                             >
-                                Services <i className="ri-arrow-right-fill"></i>
+                                Services
                             </NavLink>
 
                             <NavLink
@@ -158,7 +158,7 @@ const Nav = () => {
                                     // margin: '0 10px',
                                 })}
                             >
-                                Contact <i className="ri-arrow-right-fill"></i>
+                                Contact
                             </NavLink>
 
                             <NavLink
@@ -172,10 +172,10 @@ const Nav = () => {
                                     // margin: '0 10px',
                                 })}
                             >
-                                About <i className="ri-arrow-right-fill"></i>
+                                About
                             </NavLink>
 
-                            <NavLink
+                            {/* <NavLink
                                 ref={menuRef}
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/help"
@@ -186,7 +186,33 @@ const Nav = () => {
                                     // margin: '0 10px',
                                 })}
                             >
-                                Help <i className="ri-arrow-right-fill"></i>
+                                Help
+                            </NavLink> */}
+                            <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                to="/privacy-policy"
+                                style={({ isActive }) => ({
+                                    color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
+                                    fontWeight: isActive ? 'bold' : 'normal',
+                                    textDecoration: 'none',
+                                    // margin: '0 10px',
+                                })}
+                            >
+                                Privacy Policy
+                            </NavLink>
+                            <NavLink
+                                ref={menuRef}
+                                onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                                to="/terms-and-conditions"
+                                style={({ isActive }) => ({
+                                    color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
+                                    fontWeight: isActive ? 'bold' : 'normal',
+                                    textDecoration: 'none',
+                                    // margin: '0 10px',
+                                })}
+                            >
+                                Terms & Conditions
                             </NavLink>
                         </div>
                     </div>
@@ -269,7 +295,7 @@ const Nav = () => {
                         <NavLink
                             ref={menuRef}
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            to="/help"
+                            to="/privacy-policy"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
                                 fontWeight: isActive ? 'bold' : 'normal',
@@ -277,7 +303,20 @@ const Nav = () => {
                                 // margin: '0 10px',
                             })}
                         >
-                            Help
+                            Privacy Policy
+                        </NavLink>
+                        <NavLink
+                            ref={menuRef}
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to="/terms-and-conditions"
+                            style={({ isActive }) => ({
+                                color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
+                                fontWeight: isActive ? 'bold' : 'normal',
+                                textDecoration: 'none',
+                                // margin: '0 10px',
+                            })}
+                        >
+                            Terms & Conditions
                         </NavLink>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const Footer = () => {
                 {/* Column 1: About & Logo */}
                 <div className="footer-column about-column">
                     <div className="logo-container">
-                        <img src={logo} alt="SS Superior & Associates" className="footer-logo" />
+                        <img src={logo} alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" className="footer-logo" />
                         <h3>SS SUPERIOR & ASSOCIATES</h3>
                     </div>
                     <p className="footer-description">
@@ -86,11 +86,11 @@ const Footer = () => {
             <div className="copyright-section">
                 <p>© {new Date().getFullYear()} SS Superior & Associates. All Rights Reserved.</p>
                 <div className="legal-links">
-                    <Link >Privacy Policy</Link>
+                    <Link to="/privacy-policy">Privacy Policy</Link>
                     <span> | </span>
-                    <Link >Terms of Service</Link>
-                    <span> | </span>
-                    <Link >Disclaimer</Link>
+                    <Link to="/terms-and-conditions">Terms & Conditions</Link>
+                    {/* <span> | </span> */}
+                    {/* <Link to="/disclaimer">Disclaimer</Link> */}
                 </div>
             </div>
         </footer>
