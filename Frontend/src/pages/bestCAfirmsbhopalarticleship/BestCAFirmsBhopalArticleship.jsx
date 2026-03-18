@@ -4,8 +4,8 @@ import { NavLink, Link } from 'react-router-dom';
 import { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
-import './Home.scss'
-import './Responsive.scss'
+// import './Home.scss'
+// import './Responsive.scss'
 import logo from '../../assets/logo.svg'
 import ServicesContent from '../../components/ServicesContent'
 import ServicesOptions from '../../components/ServicesOptions'
@@ -13,7 +13,7 @@ import Testimonials from '../../components/Testimonials';
 import ContactForm from '../../components/ContactForm';
 import CareerForm from '../../components/CareerForm';
 
-const Home = () => {
+const BestCAFirmsBhopalArticleship = () => {
 
     const [option, setOptions] = useState(false)
     const [page, setPage] = useState("home");
@@ -28,18 +28,15 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates</title>
+                <title>Best CA Firms in Bhopal for Articleship</title>
                 <meta
                     name="description"
-                    content="Looking for a trusted CA in Bhopal ?
-                     Our professional CA Firm in Bhopal provides expert
-                      support in GST, income tax, audits, compliance, and
-                       business growth with clear, friendly guidance."
+                    content="Build your career with one of the Best CA Firms in Bhopal for Articleship, offering real work exposure, professional guidance, and strong learning opportunities at SS Superior & Associates."
                 />
 
                 <meta
                     name="keywords"
-                    content="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates"
+                    content="Best CA Firms in Bhopal for Articleship"
                 />
                 <link
                     rel="canonical"
@@ -114,8 +111,8 @@ const Home = () => {
                 <section className="hero-section">
                     <div className="top">
                         <div className="overlay">
-                            <h1>CA in Bhopal - SS Superior & Associates</h1>
-                            <h2>CA Firm in Bhopal - Building Trust. Enabling Growth.</h2>
+                            <h1>Best CA Firms in Bhopal for Articleship -<br />SS Superior & Associates</h1>
+                            <h2>Best CA Firms in Bhopal for Articleship - Building Trust. Enabling Growth.</h2>
                             <p>SS Superior & Associates is your one-stop solution for Taxation,
                                 GST, Compliance, Audit, and Business Setup services. As a
                                 trusted Trusted Tax & Business Advisory Partner, we are committed to simplifying
@@ -144,12 +141,12 @@ const Home = () => {
                     <div className="left">
                         <div className="top">
                             <h3>Who We Are</h3>
-                            <h2>Your Trusted Tax & Business Advisory Partner - CA in Bhopal</h2>
+                            <h2>Your Trusted Tax & Business Advisory Partner</h2>
                         </div>
                         <div className="bottom">
 
                             <p>
-                                <strong>CA Firm in Bhopal</strong> - We specialize in <strong>Income Tax filing, GST compliance, ROC filing,
+                                We specialize in <strong>Income Tax filing, GST compliance, ROC filing,
                                     PF & ESIC compliance, company registration, and financial reporting</strong>.
                                 Our approach is simple — clear advice, complete transparency, and full compliance.
                                 Whether you are a salaried professional, startup founder, NGO, or established
@@ -173,7 +170,7 @@ const Home = () => {
 
                     <div className="right">
 
-                        <img src="/image.jpeg" alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" />
+                        <img src="/image.jpeg" alt="Best CA Firms in Bhopal for Articleship | SS Superior & Associates" />
 
                         <div className="Experience">
 
@@ -206,6 +203,82 @@ const Home = () => {
                 </section>
 
                 <hr />
+                <section className="articleship-section">
+                    <div className="container">
+
+                        <h2>Articleship Opportunities at SS Superior & Associates</h2>
+
+                        <p>
+                            Articleship is one of the most important stages in the journey of a Chartered
+                            Accountant. At SS Superior & Associates, we provide structured articleship
+                            training for CA students who want practical exposure in real professional
+                            environments. Our firm offers hands-on experience in taxation, GST compliance,
+                            audit procedures, financial reporting, and regulatory compliance.
+                        </p>
+
+                        <p>
+                            During the articleship period, students get the opportunity to work on real
+                            client assignments, assist in audits, prepare income tax returns, and learn
+                            the practical application of accounting standards and tax laws. Our goal is
+                            to help students build strong technical knowledge, analytical skills, and
+                            professional confidence required for a successful CA career.
+                        </p>
+
+                        <div className="articleship-features">
+
+                            <h3>What You Will Learn During Articleship</h3>
+
+                            <ul>
+                                <li>Practical exposure in Income Tax Return (ITR) preparation and filing</li>
+                                <li>GST registration, return filing, and compliance procedures</li>
+                                <li>Assistance in statutory audits, internal audits, and tax audits</li>
+                                <li>Preparation of financial statements and accounting reports</li>
+                                <li>Understanding ROC filings and corporate compliance</li>
+                                <li>Client communication and professional documentation practices</li>
+                            </ul>
+
+                        </div>
+
+                        <div className="articleship-faq">
+
+                            <h3>Articleship Related FAQs</h3>
+
+                            <div className="faq-item">
+                                <h4>Who can apply for CA articleship?</h4>
+                                <p>
+                                    Students who have cleared the CA Intermediate examination and are
+                                    registered with ICAI can apply for articleship in a CA firm.
+                                    Articleship provides practical training that complements theoretical
+                                    knowledge gained during CA studies.
+                                </p>
+                            </div>
+
+                            <div className="faq-item">
+                                <h4>What practical experience do CA students gain during articleship?</h4>
+                                <p>
+                                    During articleship, students gain experience in taxation, GST compliance,
+                                    audit assignments, accounting work, and business advisory services.
+                                    This practical exposure helps them understand real business operations
+                                    and develop professional skills required in the accounting field.
+                                </p>
+                            </div>
+
+                            <div className="faq-item">
+                                <h4>Why is articleship important for CA students?</h4>
+                                <p>
+                                    Articleship bridges the gap between theoretical learning and practical
+                                    application. It allows CA students to understand how taxation, audit,
+                                    and compliance processes work in real businesses while developing
+                                    professional discipline and problem-solving abilities.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <hr />
 
                 <section className="services-corporate">
                     <div className="container">
@@ -216,7 +289,7 @@ const Home = () => {
                             <p>
                                 We provide end-to-end CA services including Income Tax, GST filing,
                                 audit, business registration, compliance management, and financial advisory.
-                                Everything you need — under one trusted CA Firm in Bhopal.
+                                Everything you need — under one trusted Best CA Firms in Bhopal.
                             </p>
 
                         </div>
@@ -419,91 +492,6 @@ const Home = () => {
                     </div>
                 </section>
 
-
-                <hr />
-
-                <div className="testimonials">
-                    <Testimonials />
-                </div>
-
-                <hr />
-
-                <section className="faq-section">
-                    <div className="container">
-
-                        <h2>Frequently Asked Questions</h2>
-                        <p className="faq-intro">
-                            Get quick answers to common queries related to taxation, GST, audit, and compliance services.
-                        </p>
-
-                        <div className="faq-item">
-                            <h3>1. Why should I hire a CA for tax and compliance services?</h3>
-                            <p>
-                                Hiring a qualified CA ensures your taxes are filed correctly, your GST returns
-                                are submitted on time, and your business remains legally compliant.
-                                A professional CA in Bhopal not only helps reduce tax liability but also
-                                protects you from penalties and notices. At SS Superior & Associates,
-                                we guide individuals and businesses with practical and reliable tax solutions.
-                            </p>
-
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>2. What documents are required for Income Tax Return (ITR) filing?</h3>
-                            <p>
-                                For ITR filing, you generally need PAN, Aadhaar, bank statements,
-                                Form 16 (for salaried individuals), business financial statements (for professionals),
-                                and investment proofs for tax deductions. Our team reviews all documents carefully
-                                to ensure accurate filing and maximum tax-saving benefits.
-                            </p>
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>3. How long does GST registration take?</h3>
-                            <p>
-                                GST registration usually takes 3 to 7 working days, depending on document
-                                accuracy and government processing time. Our CA firm in Bhopal handles
-                                the complete process — from documentation to final approval — ensuring
-                                a smooth and hassle-free registration.
-                            </p>
-
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>4. Do you provide online consultation services?</h3>
-                            <p>
-                                Yes, as a trusted CA in Bhopal, we provide both in-office and online consultations.
-                                Clients from Bhopal and across India can connect with us via phone, email,
-                                or virtual meetings for taxation, GST, audit, and business advisory services.
-                                While online consultations are convenient and time-saving, we also encourage
-                                face-to-face meetings for more detailed discussions and personalized financial
-                                guidance whenever required.
-                            </p>
-
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>5. Can you handle income tax notices and GST scrutiny cases?</h3>
-                            <p>
-                                Absolutely. Our firm specializes in handling income tax notices, GST notices,
-                                and representation before tax authorities. We analyze the case, prepare proper
-                                documentation, and represent clients professionally to ensure compliance
-                                and resolution.
-                            </p>
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>6. Do you provide services outside Bhopal?</h3>
-                            <p>
-                                Yes. Although Our CA Firm in Bhopal But, we serve clients across India.
-                                Our digital compliance systems allow us to manage GST filing, ROC compliance,
-                                business incorporation, and financial reporting for clients nationwide.
-                            </p>
-                        </div>
-
-                    </div>
-                </section>
-
                 <hr />
 
                 <section className="reach-out-section">
@@ -538,10 +526,114 @@ const Home = () => {
 
                 </section>
 
+                <hr />
+
+                <div className="testimonials">
+                    <Testimonials />
+                </div>
+
+                <hr />
+
+                <section className="faq-section">
+                    <div className="container">
+
+                        <h2>Frequently Asked Questions</h2>
+                        <p className="faq-intro">
+                            Get quick answers to common queries related to taxation, GST, audit, and compliance services.
+                        </p>
+
+                        <div className="faq-item">
+                            <h3>1. Why should I hire a CA for tax and compliance services?</h3>
+                            <p>
+                                Hiring a qualified CA ensures your taxes are filed correctly, your GST returns
+                                are submitted on time, and your business remains legally compliant.
+                                A professional Chartered Accountant not only helps reduce tax liability but also
+                                protects you from penalties and notices. At SS Superior & Associates,
+                                we guide individuals and businesses with practical and reliable tax solutions.
+                            </p>
+
+                        </div>
+
+                        <div className="faq-item">
+                            <h3>2. What documents are required for Income Tax Return (ITR) filing?</h3>
+                            <p>
+                                For ITR filing, you generally need PAN, Aadhaar, bank statements,
+                                Form 16 (for salaried individuals), business financial statements (for professionals),
+                                and investment proofs for tax deductions. Our team reviews all documents carefully
+                                to ensure accurate filing and maximum tax-saving benefits.
+                            </p>
+                        </div>
+
+                        <div className="faq-item">
+                            <h3>3. How long does GST registration take?</h3>
+                            <p>
+                                GST registration usually takes 3 to 7 working days, depending on document
+                                accuracy and government processing time. Our Firm handles
+                                the complete process — from documentation to final approval — ensuring
+                                a smooth and hassle-free registration.
+                            </p>
+
+                        </div>
+
+                        <div className="faq-item">
+                            <h3>4. Do you provide online consultation services?</h3>
+                            <p>
+                                Yes, as a trusted Chartered Accountant, we provide both in-office and online consultations.
+                                Clients from Bhopal and across India can connect with us via phone, email,
+                                or virtual meetings for taxation, GST, audit, and business advisory services.
+                                While online consultations are convenient and time-saving, we also encourage
+                                face-to-face meetings for more detailed discussions and personalized financial
+                                guidance whenever required.
+                            </p>
+
+                        </div>
+
+                        <div className="faq-item">
+                            <h3>5. Can you handle income tax notices and GST scrutiny cases?</h3>
+                            <p>
+                                Absolutely. Our firm specializes in handling income tax notices, GST notices,
+                                and representation before tax authorities. We analyze the case, prepare proper
+                                documentation, and represent clients professionally to ensure compliance
+                                and resolution.
+                            </p>
+                        </div>
+
+                        <div className="faq-item">
+                            <h3>6. Do you provide services outside Bhopal?</h3>
+                            <p>
+                                Yes. Although Our Firm is in Bhopal But, we serve clients across India.
+                                Our digital compliance systems allow us to manage GST filing, ROC compliance,
+                                business incorporation, and financial reporting for clients nationwide.
+                            </p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>7. Which are the best CA firms in Bhopal for articleship?</h3>
+                            <p>
+                                Several reputed CA firms in Bhopal offer quality articleship opportunities for CA students.
+                                The best CA firms in Bhopal for articleship usually provide exposure to taxation, GST, audits,
+                                compliance, and business advisory services. Firms that offer practical learning, professional
+                                mentorship, and real client experience help students build strong skills during their training period.
+                            </p>
+                        </div>
+
+                        <div class="faq-item">
+                            <h3>8. How can I apply for articleship in a CA firm in Bhopal?</h3>
+                            <p>
+                                To apply for articleship in a CA firm in Bhopal, students can send their resume through email,
+                                apply via professional networks, or visit the firm directly. Many of the best CA firms in Bhopal
+                                for articleship look for candidates with basic accounting knowledge, willingness to learn, and
+                                a professional approach. A well-prepared resume and interest in taxation, audit, and compliance
+                                work can improve your chances of selection.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
 
             </main>
         </>
     )
 }
 
-export default Home;
+export default BestCAFirmsBhopalArticleship;

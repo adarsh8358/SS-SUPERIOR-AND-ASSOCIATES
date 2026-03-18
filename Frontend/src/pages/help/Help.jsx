@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet-async";
 import './Help.scss';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
@@ -30,41 +31,54 @@ const Help = () => {
   };
 
   return (
-    <div className="help-contact">
-      {/* ...other content... */}
-      <div className="callback-form-section">
-        <div className="form-container">
-          <h2>Get a Call Back</h2>
-          <p>Fill out the form below and we'll get back to you as soon as possible</p>
+    <>
+      <Helmet>
+        <title>Help & Support | CA Firm in Bhopal</title>
+        <meta
+          name="description"
+          content="Need assistance? Get help regarding tax filing, GST, audit services and consultation from our expert CA team in Bhopal."
+        />
+        <link
+          rel="canonical"
+          href="https://sssuperiorassociates.com/help"
+        />
+      </Helmet>
 
-          <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-group">
-              <label htmlFor="name">Full Name*</label>
-              <input
-                id="name"
-                {...register('name', { required: 'Full Name is required' })}
-                placeholder="Enter your full name"
-              />
-              {errors.name && <span style={{ color: 'red' }}>{errors.name.message}</span>}
-            </div>
+      <div className="help-contact">
+        {/* ...other content... */}
+        <div className="callback-form-section">
+          <div className="form-container">
+            <h2>Get a Call Back</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible</p>
 
-            <div className="form-group">
-              <label htmlFor="mobile">Mobile Number*</label>
-              <input
-                id="mobile"
-                {...register('phone', {
-                  required: 'Mobile No. is required',
-                  pattern: {
-                    value: /^[0-9]{10,15}$/,
-                    message: 'Enter a valid mobile number'
-                  }
-                })}
-                placeholder="Enter your mobile number"
-              />
-              {errors.phone && <span style={{ color: 'red' }}>{errors.phone.message}</span>}
-            </div>
+            <form onSubmit={handleSubmit(onSubmit)}>
+              <div className="form-group">
+                <label htmlFor="name">Full Name*</label>
+                <input
+                  id="name"
+                  {...register('name', { required: 'Full Name is required' })}
+                  placeholder="Enter your full name"
+                />
+                {errors.name && <span style={{ color: 'red' }}>{errors.name.message}</span>}
+              </div>
 
-            {/* <div className="form-group">
+              <div className="form-group">
+                <label htmlFor="mobile">Mobile Number*</label>
+                <input
+                  id="mobile"
+                  {...register('phone', {
+                    required: 'Mobile No. is required',
+                    pattern: {
+                      value: /^[0-9]{10,15}$/,
+                      message: 'Enter a valid mobile number'
+                    }
+                  })}
+                  placeholder="Enter your mobile number"
+                />
+                {errors.phone && <span style={{ color: 'red' }}>{errors.phone.message}</span>}
+              </div>
+
+              {/* <div className="form-group">
               <label htmlFor="email">Email Address*</label>
               <input
                 id="email"
@@ -80,36 +94,37 @@ const Help = () => {
               {errors.email && <span style={{ color: 'red' }}>{errors.email.message}</span>}
             </div> */}
 
-            <div className="form-group">
-              <label htmlFor="message">Your Message</label>
-              <textarea
-                id="message"
-                {...register('message', { required: 'Message is required' })}
-                rows="4"
-                placeholder="How can we help you?"
-              ></textarea>
-              {errors.message && <span style={{ color: 'red' }}>{errors.message.message}</span>}
-            </div>
+              <div className="form-group">
+                <label htmlFor="message">Your Message</label>
+                <textarea
+                  id="message"
+                  {...register('message', { required: 'Message is required' })}
+                  rows="4"
+                  placeholder="How can we help you?"
+                ></textarea>
+                {errors.message && <span style={{ color: 'red' }}>{errors.message.message}</span>}
+              </div>
 
-            <div className="form-group checkbox-group">
-              <input
-                type="checkbox"
-                id="agreeTerms"
-                {...register('agreeTerms', { required: 'You must agree to the terms' })}
-              />
-              <label htmlFor="agreeTerms">
-                I agree to the terms and conditions and privacy policy
-              </label>
-              {errors.agreeTerms && <span style={{ color: 'red' }}>{errors.agreeTerms.message}</span>}
-            </div>
+              <div className="form-group checkbox-group">
+                <input
+                  type="checkbox"
+                  id="agreeTerms"
+                  {...register('agreeTerms', { required: 'You must agree to the terms' })}
+                />
+                <label htmlFor="agreeTerms">
+                  I agree to the terms and conditions and privacy policy
+                </label>
+                {errors.agreeTerms && <span style={{ color: 'red' }}>{errors.agreeTerms.message}</span>}
+              </div>
 
-            <button type="submit" className="submit-btn">
-              Request Call Back
-            </button>
-          </form>
+              <button type="submit" className="submit-btn">
+                Request Call Back
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
