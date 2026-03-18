@@ -8,7 +8,7 @@ import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
 import Help from './pages/help/Help';
 import PrivacyPolicy from './pages/privacypolicy/PrivacyPolicy';
-import TermsAndConditions from './pages/TermsAndConditions/TermsAndConditions';
+import TermsAndConditions from './pages/termsandconditions/TermsAndConditions';
 import BestCAFirmsBhopal from './pages/bestCAfirmsbhopal/BestCAFirmsBhopal';
 import CharteredAccountantBhopal from './pages/charteredaccountantbhopal/CharteredAccountantBhopal';
 import BestCAFirmsBhopalArticleship from './pages/bestCAfirmsbhopalarticleship/BestCAFirmsBhopalArticleship';
