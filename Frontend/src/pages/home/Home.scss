@@ -536,6 +536,7 @@
 }
 
 .articleship-section {
+<<<<<<< HEAD
     padding: 5rem 1.5rem;
     background: #f7f9fc;
 
@@ -681,6 +682,153 @@
             list-style: none;
             padding: 0;
 
+=======
+  padding: 5rem 1.5rem;
+  background: #f7f9fc;
+
+  .container {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #304064;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    text-align: center;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .articleship-features {
+    margin-top: 2rem;
+
+    h3 {
+      font-size: 1.4rem;
+      color: #284888;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 700px;
+      margin: auto;
+
+      li {
+        padding-left: 1.4rem;
+        margin-bottom: 0.8rem;
+        position: relative;
+      }
+
+      li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #284888;
+      }
+    }
+  }
+
+  .articleship-faq {
+    margin-top: 3rem;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: #284888;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+
+      h4 {
+        font-size: 1rem;
+        color: #304064;
+        margin-bottom: 0.4rem;
+      }
+
+      p {
+        text-align: left;
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+
+.services-corporate {
+    padding: 6rem 1.5rem;
+    background: linear-gradient(to bottom, #ffffff 60%, #f5f8ff 100%);
+
+    .container {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .section-head {
+        text-align: center;
+        margin-bottom: 5rem;
+
+        .tag {
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            //   color: #284888;
+            color: #000000c9;
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin: 1rem 0;
+            font-weight: 700;
+            //   color: #111;
+            color: #304064;
+        }
+
+        p {
+            max-width: 750px;
+            margin: 0 auto;
+            color: #6e6e73;
+            line-height: 1.7;
+        }
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .service-card {
+        background: #ffffff;
+        padding: 2.5rem;
+        border-radius: 10px;
+        border-left: 4px solid #284888;
+        // border-right: 4px solid #284888;
+        transition: 0.35s ease;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            //   color: #1a1a1a;
+            color: #284888;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+>>>>>>> 8392e70a535d37d91aab8dc6ab7aeb9f916c9371
             li {
                 position: relative;
                 padding-left: 1.5rem;
@@ -714,6 +862,7 @@
             border-left: 4px solid #1a2f5f;
             //   border-right: 4px solid #1a2f5f;
             cursor: default;
+<<<<<<< HEAD
         }
     }
 }
@@ -809,9 +958,13 @@
             color: #444;
             line-height: 1.7;
             font-size: 0.95rem;
+=======
+>>>>>>> 8392e70a535d37d91aab8dc6ab7aeb9f916c9371
         }
     }
 }
+
+
 
 .reach-out-section {
     display: flex;
@@ -954,4 +1107,103 @@
         margin-top: 1rem;
     }
 
+<<<<<<< HEAD
 }
+=======
+}
+
+.testimonials {
+    background-color: #f9f9f9;
+    padding: 4rem 1rem;
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        text-align: center;
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+
+            @media (min-width: 600px) {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            @media (min-width: 900px) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .testimonial {
+                background: white;
+                padding: 1.5rem;
+                border-radius: 12px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: translateY(-5px);
+                }
+
+                p {
+                    font-style: italic;
+                    color: #555;
+                    margin-bottom: 1rem;
+                }
+
+                h4 {
+                    font-weight: 600;
+                    color: #222;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.faq-section {
+  padding: 5rem 1.5rem;
+  background: #ffffff;
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+
+  .faq-intro {
+    text-align: center;
+    color: #6e6e73;
+    margin-bottom: 3rem;
+  }
+
+  .faq-item {
+    margin-bottom: 2.5rem;
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #284888;
+      margin-bottom: 0.8rem;
+    }
+
+    p {
+      color: #444;
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+  }
+}
+>>>>>>> 8392e70a535d37d91aab8dc6ab7aeb9f916c9371
