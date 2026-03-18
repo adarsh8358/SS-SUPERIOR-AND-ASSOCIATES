@@ -108,11 +108,8 @@ const Home = () => {
                     </div>
                 </div>
             )}
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 8392e70a535d37d91aab8dc6ab7aeb9f916c9371
+
             <main className='home'>
 
                 <section className="hero-section">
@@ -223,8 +220,6 @@ const Home = () => {
                                 Everything you need — under one trusted CA Firm in Bhopal.
                             </p>
 
-<<<<<<< HEAD
-=======
                         </div>
 
                         <div className="services-grid">
@@ -421,7 +416,6 @@ const Home = () => {
                                 </ul>
                             </div>
 
->>>>>>> 8392e70a535d37d91aab8dc6ab7aeb9f916c9371
                         </div>
 
                         <div className="services-grid">
@@ -741,8 +735,6 @@ const Home = () => {
 
                 </section>
 
-<<<<<<< HEAD
-=======
                 <hr />
 
                 <div className="testimonials">
@@ -826,7 +818,6 @@ const Home = () => {
 
                     </div>
                 </section>
->>>>>>> 8392e70a535d37d91aab8dc6ab7aeb9f916c9371
 
             </main>
         </>
