@@ -229,12 +229,12 @@ const Home = () => {
                             <div className="service-card">
                                 <h3>Taxation Services</h3>
                                 <ul>
-                                    <li>Income Tax Return (ITR) Filing</li>
-                                    <li>Tax Planning & Tax Saving Strategies</li>
-                                    <li>GST Registration & Return Filing</li>
-                                    <li>TDS Filing & Compliance</li>
-                                    <li>Tax Notices & Scrutiny Handling</li>
-                                    <li>International Taxation</li>
+                                    <li>ITR Filing</li>
+                                    <li>Tax Planning</li>
+                                    <li>GST Registration & Filing</li>
+                                    <li>TDS Compliance</li>
+                                    <li>Notice Handling</li>
+                                    <li>International Tax</li>
                                 </ul>
                             </div>
 
@@ -242,24 +242,23 @@ const Home = () => {
                                 <h3>Audit & Assurance</h3>
                                 <ul>
                                     <li>Statutory Audit</li>
-                                    <li>Tax Audit (Under Income Tax Act)</li>
+                                    <li>Tax Audit</li>
                                     <li>GST Audit</li>
                                     <li>Internal Audit</li>
                                     <li>Stock Audit</li>
-                                    <li>Concurrent Audit</li>
-                                    <li>NGO / Trust Audit</li>
+                                    <li>NGO Audit</li>
                                 </ul>
                             </div>
 
                             <div className="service-card">
                                 <h3>Business Registration & Setup</h3>
                                 <ul>
-                                    <li>Company Registration (Pvt Ltd, OPC, LLP)</li>
-                                    <li>Partnership Firm Registration</li>
+                                    <li>Pvt Ltd / LLP Registration</li>
+                                    <li>Partnership Registration</li>
                                     <li>MSME Registration</li>
                                     <li>GST Registration</li>
-                                    <li>Startup India Registration</li>
-                                    <li>NGO / Trust / Society Registration</li>
+                                    <li>Startup India</li>
+                                    <li>NGO Registration</li>
                                 </ul>
                             </div>
 
@@ -418,201 +417,6 @@ const Home = () => {
 
                         </div>
 
-                        <div className="services-grid">
-
-                            {/* CA SERVICES */}
-
-                            <div className="service-card">
-                                <h3>Taxation Services</h3>
-                                <ul>
-                                    <li>Income Tax Return (ITR) Filing</li>
-                                    <li>Tax Planning & Tax Saving Strategies</li>
-                                    <li>GST Registration & Return Filing</li>
-                                    <li>TDS Filing & Compliance</li>
-                                    <li>Tax Notices & Scrutiny Handling</li>
-                                    <li>International Taxation</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Audit & Assurance</h3>
-                                <ul>
-                                    <li>Statutory Audit</li>
-                                    <li>Tax Audit (Under Income Tax Act)</li>
-                                    <li>GST Audit</li>
-                                    <li>Internal Audit</li>
-                                    <li>Stock Audit</li>
-                                    <li>Concurrent Audit</li>
-                                    <li>NGO / Trust Audit</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Business Registration & Setup</h3>
-                                <ul>
-                                    <li>Company Registration (Pvt Ltd, OPC, LLP)</li>
-                                    <li>Partnership Firm Registration</li>
-                                    <li>MSME Registration</li>
-                                    <li>GST Registration</li>
-                                    <li>Startup India Registration</li>
-                                    <li>NGO / Trust / Society Registration</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Accounting & Bookkeeping</h3>
-                                <ul>
-                                    <li>Monthly Bookkeeping</li>
-                                    <li>Financial Statement Preparation</li>
-                                    <li>Balance Sheet & Profit & Loss Account</li>
-                                    <li>Payroll Processing</li>
-                                    <li>MIS Reporting</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Compliance & Regulatory Services</h3>
-                                <ul>
-                                    <li>ROC Compliance</li>
-                                    <li>Annual Filing for Companies & LLP</li>
-                                    <li>DIN & DSC Services</li>
-                                    <li>RBI Compliance</li>
-                                    <li>FEMA Compliance</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Financial & Advisory Services</h3>
-                                <ul>
-                                    <li>Project Report Preparation</li>
-                                    <li>Loan & CMA Report</li>
-                                    <li>Business Valuation</li>
-                                    <li>Investment Advisory</li>
-                                    <li>Budgeting & Financial Planning</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>NGO & Trust Services</h3>
-                                <ul>
-                                    <li>12A & 80G Registration</li>
-                                    <li>CSR Compliance</li>
-                                    <li>FCRA Registration</li>
-                                    <li>NGO Audit & Compliance</li>
-                                </ul>
-                            </div>
-
-                            {/* OTHER SERVICES */}
-
-                            <div className="service-card">
-                                <h3>Business Advisory & Growth Consulting</h3>
-                                <ul>
-                                    <li>Business Restructuring</li>
-                                    <li>Profit Improvement Strategies</li>
-                                    <li>Cost Control & Budgeting</li>
-                                    <li>Financial Forecasting</li>
-                                    <li>Cash Flow Management</li>
-                                    <li>Risk Management Advisory</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Loan & Banking Support</h3>
-                                <ul>
-                                    <li>CMA Data Preparation</li>
-                                    <li>Project Report for Bank Loans</li>
-                                    <li>Working Capital Assessment</li>
-                                    <li>Loan Restructuring Assistance</li>
-                                    <li>Bank Compliance Support</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Corporate Finance Services</h3>
-                                <ul>
-                                    <li>Business Valuation</li>
-                                    <li>Due Diligence</li>
-                                    <li>Mergers & Acquisitions Support</li>
-                                    <li>Financial Modeling</li>
-                                    <li>Investor Pitch Financials</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>International & NRI Services</h3>
-                                <ul>
-                                    <li>NRI Taxation</li>
-                                    <li>FEMA Compliance</li>
-                                    <li>Foreign Investment Advisory</li>
-                                    <li>Transfer Pricing</li>
-                                    <li>DTAA Advisory</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Litigation & Representation</h3>
-                                <ul>
-                                    <li>Income Tax Appeals</li>
-                                    <li>GST Appeals</li>
-                                    <li>Representation Before Authorities</li>
-                                    <li>Tribunal Matters Support</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Virtual CFO Services</h3>
-                                <ul>
-                                    <li>Strategic Financial Planning</li>
-                                    <li>Board-Level Reporting</li>
-                                    <li>KPI Tracking</li>
-                                    <li>Business Performance Analysis</li>
-                                    <li>Fundraising Strategy</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Startup & MSME Advisory</h3>
-                                <ul>
-                                    <li>Startup Funding Support</li>
-                                    <li>ESOP Structuring</li>
-                                    <li>Valuation for Investors</li>
-                                    <li>Compliance Roadmap</li>
-                                    <li>Government Subsidy Consultation</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Investment & Wealth Advisory</h3>
-                                <ul>
-                                    <li>Portfolio Structuring</li>
-                                    <li>Capital Gain Planning</li>
-                                    <li>Retirement Planning</li>
-                                    <li>Financial Goal Planning</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Certification Services</h3>
-                                <ul>
-                                    <li>Net Worth Certificate</li>
-                                    <li>Turnover Certificate</li>
-                                    <li>CA Certificate for Visa</li>
-                                    <li>Fund Utilization Certificate</li>
-                                    <li>Financial Projection Certificate</li>
-                                </ul>
-                            </div>
-
-                            <div className="service-card">
-                                <h3>Forensic & Investigation Services</h3>
-                                <ul>
-                                    <li>Fraud Investigation</li>
-                                    <li>Financial Forensic Audit</li>
-                                    <li>Dispute Resolution</li>
-                                    <li>Insurance Claim Certification</li>
-                                </ul>
-                            </div>
-
-                        </div>
                     </div>
                 </section>
 
@@ -735,89 +539,6 @@ const Home = () => {
 
                 </section>
 
-                <hr />
-
-                <div className="testimonials">
-                    <Testimonials />
-                </div>
-
-                <hr />
-
-                <section className="faq-section">
-                    <div className="container">
-
-                        <h2>Frequently Asked Questions</h2>
-                        <p className="faq-intro">
-                            Get quick answers to common queries related to taxation, GST, audit, and compliance services.
-                        </p>
-
-                        <div className="faq-item">
-                            <h3>1. Why should I hire a CA for tax and compliance services?</h3>
-                            <p>
-                                Hiring a qualified CA ensures your taxes are filed correctly, your GST returns
-                                are submitted on time, and your business remains legally compliant.
-                                A professional CA in Bhopal not only helps reduce tax liability but also
-                                protects you from penalties and notices. At SS Superior & Associates,
-                                we guide individuals and businesses with practical and reliable tax solutions.
-                            </p>
-
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>2. What documents are required for Income Tax Return (ITR) filing?</h3>
-                            <p>
-                                For ITR filing, you generally need PAN, Aadhaar, bank statements,
-                                Form 16 (for salaried individuals), business financial statements (for professionals),
-                                and investment proofs for tax deductions. Our team reviews all documents carefully
-                                to ensure accurate filing and maximum tax-saving benefits.
-                            </p>
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>3. How long does GST registration take?</h3>
-                            <p>
-                                GST registration usually takes 3 to 7 working days, depending on document
-                                accuracy and government processing time. Our CA firm in Bhopal handles
-                                the complete process — from documentation to final approval — ensuring
-                                a smooth and hassle-free registration.
-                            </p>
-
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>4. Do you provide online consultation services?</h3>
-                            <p>
-                                Yes, as a trusted CA in Bhopal, we provide both in-office and online consultations.
-                                Clients from Bhopal and across India can connect with us via phone, email,
-                                or virtual meetings for taxation, GST, audit, and business advisory services.
-                                While online consultations are convenient and time-saving, we also encourage
-                                face-to-face meetings for more detailed discussions and personalized financial
-                                guidance whenever required.
-                            </p>
-
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>5. Can you handle income tax notices and GST scrutiny cases?</h3>
-                            <p>
-                                Absolutely. Our firm specializes in handling income tax notices, GST notices,
-                                and representation before tax authorities. We analyze the case, prepare proper
-                                documentation, and represent clients professionally to ensure compliance
-                                and resolution.
-                            </p>
-                        </div>
-
-                        <div className="faq-item">
-                            <h3>6. Do you provide services outside Bhopal?</h3>
-                            <p>
-                                Yes. Although Our CA Firm in Bhopal But, we serve clients across India.
-                                Our digital compliance systems allow us to manage GST filing, ROC compliance,
-                                business incorporation, and financial reporting for clients nationwide.
-                            </p>
-                        </div>
-
-                    </div>
-                </section>
 
             </main>
         </>
