@@ -4,7 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // ✅ Removed `Router`
 import './Nav.scss';
 // import './ResponsiveNav.scss';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo.webp';
 
 const Nav = () => {
 

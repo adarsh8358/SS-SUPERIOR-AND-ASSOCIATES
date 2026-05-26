@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate } from 'react-router-dom';
 import './Home.scss'
 import './Responsive.scss'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.webp'
 import ServicesContent from '../../components/ServicesContent'
 import ServicesOptions from '../../components/ServicesOptions'
 import Testimonials from '../../components/Testimonials';
@@ -174,7 +174,7 @@ const Home = () => {
 
                     <div className="right">
 
-                        <img src="/image.jpeg" alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" />
+                        <img src="/image.webp" alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" />
 
                         <div className="Experience">
 

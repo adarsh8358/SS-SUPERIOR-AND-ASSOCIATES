@@ -39,7 +39,7 @@ const About = () => {
                 <div className="about-text">
                   <p>
                     Founded by <strong>Mr. Shiv Kushwaha</strong>, a seasoned tax consultant and compliance
-                    strategist with over 7 years of experience, our firm is <strong>headquartered</strong> in
+                    strategist with over 8 years of experience, our firm is <strong>headquartered</strong> in
                     <strong> Bhopal</strong> and serves clients across India. What began as a modest practice
                     has grown into a respected advisory firm known for its technical expertise
                     and client-focused approach.
@@ -98,7 +98,7 @@ const About = () => {
 
                 <div className="achievements">
                   <div className="achievement-box">
-                    <h3>7.5+</h3>
+                    <h3>8+</h3>
                     <p>Years of Experience</p>
                   </div>
                   <div className="achievement-box">
