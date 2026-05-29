@@ -6,7 +6,7 @@ import Home from './pages/home/Home';
 import Services from './pages/services/Services';
 import Contact from './pages/contact/Contact';
 import About from './pages/about/About';
-import Help from './pages/help/Help';
+import Blog from './pages/blog/Blog';
 import PrivacyPolicy from './pages/privacypolicy/PrivacyPolicy';
 import TermsAndConditions from './pages/termsandconditions/TermsAndConditions';
 import BestCAFirmsBhopal from './pages/bestCAfirmsbhopal/BestCAFirmsBhopal';
@@ -27,7 +27,7 @@ const AppContent = () => {
     '/services',
     '/contact',
     '/about',
-    '/help',
+    '/blog',
     '/privacy-policy',
     '/terms-and-conditions',
     '/best-ca-firms-bhopal',
@@ -51,7 +51,7 @@ const AppContent = () => {
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/help" element={<Help />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
         <Route path="/best-ca-firms-bhopal" element={<BestCAFirmsBhopal />} />

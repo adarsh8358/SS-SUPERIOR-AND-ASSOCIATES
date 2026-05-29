@@ -175,10 +175,10 @@ const Nav = () => {
                                 About
                             </NavLink>
 
-                            {/* <NavLink
+                            <NavLink
                                 ref={menuRef}
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                                to="/help"
+                                to="/blog"
                                 style={({ isActive }) => ({
                                     color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
                                     fontWeight: isActive ? 'bold' : 'normal',
@@ -186,9 +186,9 @@ const Nav = () => {
                                     // margin: '0 10px',
                                 })}
                             >
-                                Help
-                            </NavLink> */}
-                            <NavLink
+                                Blog
+                            </NavLink>
+                            {/* <NavLink
                                 ref={menuRef}
                                 onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                                 to="/privacy-policy"
@@ -213,7 +213,7 @@ const Nav = () => {
                                 })}
                             >
                                 Terms & Conditions
-                            </NavLink>
+                            </NavLink> */}
                         </div>
                     </div>
 
