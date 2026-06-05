@@ -161,7 +161,7 @@ const BestCAFirmsBhopal = () => {
 
                     <div className="right">
 
-                        <img src="/image.jpeg" alt="Best CA in Bhopal | Best CA Firms in Bhopal | SS Superior & Associates" />
+                        <img src="/image.jpeg" alt="CA Firm in Bhopal | Best CA Firms in Bhopal | SS Superior & Associates" />
 
                         <div className="Experience">
 

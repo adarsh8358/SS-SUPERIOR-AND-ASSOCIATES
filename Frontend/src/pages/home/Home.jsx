@@ -28,7 +28,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates</title>
+                <title>CA in Bhopal | Best CA in Bhopal | SS Superior & Associates</title>
                 <meta
                     name="description"
                     content="Looking for a trusted CA in Bhopal ?
@@ -39,7 +39,7 @@ const Home = () => {
 
                 <meta
                     name="keywords"
-                    content="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates"
+                    content="CA in Bhopal | Best CA in Bhopal | SS Superior & Associates"
                 />
                 <link
                     rel="canonical"
@@ -160,7 +160,7 @@ const Home = () => {
 
                     <div className="right">
 
-                        <img src="/image.webp" alt="CA in Bhopal | CA Firm in Bhopal | SS Superior & Associates" />
+                        <img src="/image.webp" alt="CA in Bhopal | Best CA in Bhopal | SS Superior & Associates" />
 
                         <div className="Experience">
 

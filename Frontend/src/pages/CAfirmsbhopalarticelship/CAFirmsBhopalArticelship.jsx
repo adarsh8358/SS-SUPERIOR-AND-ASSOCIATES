@@ -113,10 +113,10 @@ const CAFirmsBhopalArticelship = () => {
                         <div className="overlay">
                             <h1>CA Firms in Bhopal for Articleship -<br />SS Superior & Associates</h1>
                             <h2>CA Firms in Bhopal for Articleship - Building Trust. Enabling Growth.</h2>
-                            <p>SS Superior & Associates is your one-stop shop for all Taxation, GST, Compliance,
+                            {/* <p>SS Superior & Associates is your one-stop shop for all Taxation, GST, Compliance,
                                 Audit and Business Setup needs. We are a Tax and Business Advisory Partner. We
                                 help individuals, professionals, startups and big businesses. Managing taxes
-                                and rules can be really tough.</p>
+                                and rules can be really tough.</p> */}
                             {/* <Link to="/contact" className="Consultnow">Consult now <i className="ri-arrow-right-line"></i></Link> */}
                         </div>
                     </div>
