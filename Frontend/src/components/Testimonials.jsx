@@ -8,7 +8,7 @@ const Testimonials = () => {
             id: 1,
             name: "Rajesh Sharma",
             company: "Sharma Textiles",
-            quote: "SS Superior & Associates - CA in Bhopal helped us navigate complex GST filings. Their team saved us over ₹2 lakhs in penalties with their proactive approach.",
+            quote: "SS Superior & Associates - Helped us navigate complex GST filings. Their team saved us over ₹2 lakhs in penalties with their proactive approach.",
             rating: 5
         },
         {
@@ -53,7 +53,7 @@ const Testimonials = () => {
                 </div>
 
                 <div className="cta">
-                    <p>Ready to experience the SS Superior difference?</p>
+                    <p>Ready to experience the SS Superior & Associates difference?</p>
                     <Link to="/contact" className="cta-button">
                         Get Your Free Consultation
                     </Link>

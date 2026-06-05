@@ -45,11 +45,11 @@ const Services = () => {
               <div className="service-category">
                 <div className="service-header">
                   <span className="service-icon">🔹</span>
-                  <h3>GST & Indirect Tax Services</h3>
+                  <h3>GST and Indirect Tax Services</h3>
                 </div>
                 <ul className="service-list">
-                  <li>GST Registration (Regular / Composition Scheme)</li>
-                  <li>Monthly / Quarterly GST Return Filing (GSTR-1, GSTR-3B, GSTR-4, GSTR-9)</li>
+                  <li>GST Registration</li>
+                  <li>Monthly GST Return Filing</li>
                   <li>GST Revocation, Cancellation & Amendment</li>
                   <li>LUT Filing, Refund Claims & Advisory</li>
                   <li>E-invoice & E-way Bill Compliance</li>
@@ -63,9 +63,9 @@ const Services = () => {
                   <h3>Income Tax & Direct Tax Services</h3>
                 </div>
                 <ul className="service-list">
-                  <li>Income Tax Return Filing (Salaried, Business, NRI)</li>
-                  <li>TDS Return Filing & Compliance</li>
-                  <li>Tax Audit (u/s 44AB)</li>
+                  <li>Income Tax Return Filing</li>
+                  <li>TDS Return Filing</li>
+                  <li>Tax Audit</li>
                   <li>Capital Gain, Rental & Dividend Income Tax Advisory</li>
                   <li>Updated / Revised Return Filing</li>
                   <li>15CA/CB Compliance (for remittance)</li>
@@ -114,9 +114,9 @@ const Services = () => {
                   <h3>Startup & MSME Support</h3>
                 </div>
                 <ul className="service-list">
-                  <li>MSME (Udyam) Registration</li>
-                  <li>Startup India Registration & Guidance</li>
-                  <li>Business Structuring & Advisory</li>
+                  <li>MSME and Udyam Registration</li>
+                  <li>Startup India Registration and Guidance</li>
+                  <li>Business Structuring and Advisory</li>
                   <li>Tax Benefits for Startups</li>
                   <li>Pitch Deck & Funding Assistance</li>
                 </ul>
@@ -141,14 +141,14 @@ const Services = () => {
               <div className="service-category">
                 <div className="service-header">
                   <span className="service-icon">🔹</span>
-                  <h3>Accounting & Audit Services</h3>
+                  <h3>Accounting and Audit Services</h3>
                 </div>
                 <ul className="service-list">
-                  <li>Monthly / Quarterly Accounting (Manual & Tally)</li>
-                  <li>Ledger Finalization & Reconciliation</li>
+                  <li>Accounting and Bookkeeping</li>
+                  <li>Ledger Finalization and Reconciliation</li>
                   <li>Stock Audit & Internal Audit</li>
-                  <li>Financial Statement Preparation</li>
-                  <li>MIS Reporting & Year-End Book Closure</li>
+                  <li>Preparation of Financial Statements</li>
+                  <li>MIS Reporting and Year-End Book Closure</li>
                 </ul>
               </div>
 
@@ -159,9 +159,9 @@ const Services = () => {
                   <h3>Investment & Insurance Services</h3>
                 </div>
                 <ul className="service-list">
-                  <li>Mutual Fund & SIP Planning</li>
-                  <li>Tax-Saving Instruments (ELSS, NPS, etc.)</li>
-                  <li>Life, Health & General Insurance</li>
+                  <li>Mutual Fund and SIP Planning</li>
+                  <li>Tax-Saving Instruments</li>
+                  <li>Life, Health and General Insurance</li>
                   <li>Personalized Financial Planning</li>
                 </ul>
               </div>
@@ -170,14 +170,14 @@ const Services = () => {
               <div className="service-category">
                 <div className="service-header">
                   <span className="service-icon">🔹</span>
-                  <h3>Licenses & Regulatory Registrations</h3>
+                  <h3>Licenses and Regulatory Registrations</h3>
                 </div>
                 <ul className="service-list">
-                  <li>FSSAI (Food License) Registration</li>
-                  <li>MP Shop & Establishment License (Gumasta)</li>
-                  <li>Import Export Code (IEC)</li>
-                  <li>Digital Signature Certificate (DSC)</li>
-                  <li>Labour License & Trade License</li>
+                  <li>FSSAI Registration or Food License</li>
+                  <li>Gumasta</li>
+                  <li>Import Export Code</li>
+                  <li>Digital Signature Certificate</li>
+                  <li>Labour License and Trade License</li>
                 </ul>
               </div>
 
@@ -216,8 +216,11 @@ const Services = () => {
         {/* CTA Section */}
         <section className="services-cta">
           <div className="container">
-            <h2>Need Help With Any of These Services?</h2>
-            <p>Our experts are ready to assist you with personalized solutions</p>
+            <h2>Need Help ?</h2>
+            <p>We have people who can help you with answers that're just for you.
+              Our experts are ready to assist you with solutions that are made for
+              you. They want to help you find what you need. Our experts will work
+              with you to get the solutions.</p>
             <div className="cta-buttons">
               {/* <button className="cta-button primary">Book a Consultation</button> */}
               <Link to="/contact" className="cta-button secondary">Contact Us</Link>

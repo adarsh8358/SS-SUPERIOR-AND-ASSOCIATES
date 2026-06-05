@@ -24,7 +24,7 @@ const About = () => {
         <section className="about-hero">
           <div className="container">
             <h1>About Our Firm</h1>
-            <p>Your Trusted Partner for Comprehensive Financial Solutions</p>
+            <p>We are the people you can rely on for help with all your money matters and financial needs. </p>
           </div>
         </section>
 
@@ -38,47 +38,59 @@ const About = () => {
 
                 <div className="about-text">
                   <p>
-                    Founded by <strong>Mr. Shiv Kushwaha</strong>, a seasoned tax consultant and compliance
-                    strategist with over 8 years of experience, our firm is <strong>headquartered</strong> in
-                    <strong> Bhopal</strong> and serves clients across India. What began as a modest practice
-                    has grown into a respected advisory firm known for its technical expertise
-                    and client-focused approach.
+                    Our company was started by <strong>Mr. Shiv Kushwaha</strong>. He is a tax consultant.
+                    He knows a lot about this field. Mr. Shiv Kushwaha has been doing this
+                    work for than 8 years. Our company is based in <strong>Bhopal</strong>. We help people
+                    over India.
                   </p>
 
                   <p>
-                    Over the years, we have built a reputation for delivering timely, accurate,
-                    and actionable solutions across a diverse portfolio including:
+                    We have spent a lot of time building a name for ourselves by giving people what
+                    they need when they need it. We do this by providing solutions that really work.
+                    These solutions are, for different types of things including:
                   </p>
 
                   <ul>
-                    <li>Income Tax Planning and Filing</li>
-                    <li>GST Registration and Compliance</li>
+                    <li>Income Tax Return Filing</li>
+                    <li>GST Registration</li>
                     <li>PF/ESIC Advisory Services</li>
                     <li>ROC Compliance and Filings</li>
-                    <li>Business Entity Incorporation</li>
-                    <li>Financial Reporting and Analysis</li>
+                    <li>Company Registration</li>
+                    <li>Financial Reporting and Analysing</li>
                   </ul>
 
                   <hr />
 
                   <p>
-                    Our <strong>strength</strong> lies in a <strong>client-centric</strong> philosophy that prioritizes
-                    clarity, confidentiality, and compliance at every stage. We understand that
-                    each client has unique needs, which is why we reject the one-size-fits-all
-                    approach in favor of customized solutions.
+                    Our strength is in putting the client. We think it is really important to be
+                    clear keep things and follow the rules at every step. We know that each client
+                    is different and has their needs. This is why we do not use the approach for
+                    every client. Instead we make a plan that's just, for them a plan that is
+                    tailored to what they need. We call this a solution. Our client-centric
+                    philosophy is what guides us to do things this way.
+
+
                   </p>
 
                   <p>
-                    Whether you're a salaried individual seeking tax optimization, an entrepreneur
-                    navigating business regulations, a startup establishing compliance frameworks,
-                    or an established enterprise requiring sophisticated financial advisory,
-                    we adapt our expertise to your specific circumstances.
+                    We help people, with tax optimization no matter who they are. If you are someone
+                    who gets a salary and you want to pay tax we can help you with that. We also
+                    help business owners who are just starting out and need to know about all the
+                    rules they have to follow. Startups need to follow a lot of rules so we help
+                    them with that. And big companies need good financial advice so we do that
+                    for them as well. We make sure our expertise fits the tax optimization
+                    needs of each company like a startup or a big enterprise and even the tax
+                    optimization needs of each person like a salaried individual or an
+                    entrepreneur.
                   </p>
 
                   <div className="mission-vision">
                     <div className="mission">
                       <h4>Our Mission</h4>
-                      <p>To empower clients with financial clarity and compliance confidence through expert guidance and personalized service.</p>
+                      <p>We want to help our clients understand their money and do things with the law.
+                        Our experts will guide them. Give them the special attention they need. We do
+                        this so our clients have clarity and feel confident they are doing everything
+                        correctly.</p>
                     </div>
                     <div className="vision">
                       <h4>Our Vision</h4>
@@ -92,7 +104,7 @@ const About = () => {
                 <div className="image-container">
                   <img src="/image.jpeg" alt="Our Team" />
                   <div className="image-overlay">
-                    <p>Mr. Shiv Kushwaha with our dedicated advisory team</p>
+                    <p>Mr. Shiv Kushwaha and Team</p>
                   </div>
                 </div>
 
@@ -122,17 +134,17 @@ const About = () => {
         {/* Values Section */}
         <section className="values-section">
           <div className="container">
-            <h2>Our Core Values</h2>
+            <h2>Our Core Value</h2>
             <div className="values-grid">
               <div className="value-card">
                 <div className="value-icon">✓</div>
                 <h3>Integrity</h3>
-                <p>We maintain the highest ethical standards in all our advice and actions.</p>
+                <p>We make sure our advice and actions are honest and fair.</p>
               </div>
               <div className="value-card">
                 <div className="value-icon">✧</div>
                 <h3>Expertise</h3>
-                <p>Continuous learning ensures we provide technically sound solutions.</p>
+                <p>We always keep learning so that we can give people solutions that really work from a point of view.</p>
               </div>
               <div className="value-card">
                 <div className="value-icon">♥</div>

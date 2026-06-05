@@ -63,7 +63,7 @@ const Contact = () => {
 
       <div className="help-contact">
         <h1 className="help-title">Contact</h1>
-        <p className="help-subtitle">We're here to assist you with any questions or concerns</p>
+        <p className="help-subtitle">We're here to help you with any questions or problems you have.</p>
 
         <div className="contact-options">
           {/* ...existing contact cards... */}
@@ -112,7 +112,7 @@ const Contact = () => {
         <div className="callback-form-section">
           <div className="form-container">
             <h2>Get-in-Touch</h2>
-            <p>Fill out the form below and we'll get back to you as soon as possible</p>
+            <p>Fill out the form below. We will get back, to you soon as we can.</p>
 
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
@@ -166,7 +166,7 @@ const Contact = () => {
                   id="message"
                   {...register('message')}
                   rows="4"
-                  placeholder="How can we help you?"
+                  placeholder="What do you need help with?"
                 ></textarea>
               </div>
 
@@ -177,7 +177,7 @@ const Contact = () => {
                   {...register('agreeTerms', { required: 'You must agree to the terms' })}
                 />
                 <label htmlFor="agreeTerms">
-                  I agree to the terms and conditions and privacy policy
+                  I have read the terms and conditions and the privacy policy. I am okay, with them.
                 </label>
                 {errors.agreeTerms && <span style={{ color: 'red' }} className="error">{errors.agreeTerms.message}</span>}
               </div>

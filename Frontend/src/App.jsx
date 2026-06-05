@@ -14,6 +14,8 @@ import CharteredAccountantBhopal from './pages/charteredaccountantbhopal/Charter
 import BestCAFirmsBhopalArticleship from './pages/bestCAfirmsbhopalarticleship/BestCAFirmsBhopalArticleship';
 import CAFirmsBhopalArticelship from './pages/CAfirmsbhopalarticelship/CAFirmsBhopalArticelship';
 
+import LowercaseRedirect from './components/LowercaseRedirect';
+
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
@@ -23,7 +25,11 @@ const NotFound = () => <h1 style={{ textAlign: 'center', marginTop: '3rem' }}>Pa
 
 const AppContent = () => {
   const location = useLocation();
-  const is404 = !['/',
+
+  const pathname = location.pathname.toLowerCase();
+
+  const is404 = ![
+    '/',
     '/services',
     '/contact',
     '/about',
@@ -34,12 +40,11 @@ const AppContent = () => {
     '/chartered-accountant-bhopal',
     '/best-ca-firms-bhopal-articleship',
     '/ca-firms-bhopal-articleship',
-  ].includes(location.pathname);
+  ].includes(pathname);
 
   if (is404) {
     return <NotFound />;
   }
-
   return (
     <>
       <ToastContainer position="top-right" autoClose={3000} />
@@ -69,6 +74,7 @@ const App = () => (
   <div className="scroll-container">
     <HelmetProvider>
       <BrowserRouter>
+      <LowercaseRedirect />
         <AppContent />
       </BrowserRouter>
     </HelmetProvider>

@@ -222,7 +222,7 @@ const Nav = () => {
                         <button className="Get-in-touch" onClick={() => navigate('/contact')}> Get In Touch </button>
                         {/* <Link to="contact" className='Get-in-touch'>Get-in-touch</Link> */}
                         <Link to="https://wa.me/919111656571?text=Hello%20I%20am%20interested%20in%20your%20services" target="_blank">
-                            <button><i className="ri-whatsapp-line"></i> +91 9111656571</button>
+                            <button><i className="ri-whatsapp-line"></i> +91 91116 56571</button>
                         </Link>
                         <i
                             onClick={() => setMenuOpen(!menuOpen)}
@@ -295,7 +295,7 @@ const Nav = () => {
                         <NavLink
                             ref={menuRef}
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            to="/privacy-policy"
+                            to="/blog"
                             style={({ isActive }) => ({
                                 color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
                                 fontWeight: isActive ? 'bold' : 'normal',
@@ -303,20 +303,7 @@ const Nav = () => {
                                 // margin: '0 10px',
                             })}
                         >
-                            Privacy Policy
-                        </NavLink>
-                        <NavLink
-                            ref={menuRef}
-                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            to="/terms-and-conditions"
-                            style={({ isActive }) => ({
-                                color: isActive ? 'rgba(230, 17, 17, 0.75)' : '#284888',
-                                fontWeight: isActive ? 'bold' : 'normal',
-                                textDecoration: 'none',
-                                // margin: '0 10px',
-                            })}
-                        >
-                            Terms & Conditions
+                            Blog
                         </NavLink>
                     </div>
                 </div>
