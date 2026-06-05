@@ -114,11 +114,7 @@ const CharteredAccountantBhopal = () => {
                             <h1>Chartered Accountant Bhopal -<br />SS Superior & Associates</h1>
                             <h2>Chartered Accountant Bhopal - Building Trust. Enabling Growth.</h2>
                             <p>SS Superior & Associates is the place to go for help with Taxation,
-                                GST, Compliance, Audit and Business Setup services. We are a company
-                                that people trust to give them advice on taxes and business. We
-                                want to make it easy for people to deal with laws and money matters.
-                                This includes individuals, professionals, new companies and big
-                                companies that have been around for a while.</p>
+                                GST, Compliance, Audit and Business Setup services.</p>
                             {/* <Link to="/contact" className="Consultnow">Consult now <i className="ri-arrow-right-line"></i></Link> */}
                         </div>
                     </div>

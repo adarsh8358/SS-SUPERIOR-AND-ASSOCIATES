@@ -120,13 +120,7 @@ const Home = () => {
                             <p>SS Superior & Associates is the place to go for help with
                                 taxes and other things like GST and setting up a business.
                                 We are a team that you can trust to help you with taxes
-                                and business advice. Our goal is to make things easier
-                                for people and companies when it comes to dealing with
-                                laws and money. We want to help individuals, professionals,
-                                new businesses and big companies with things, like
-                                taxes following rules and looking at their finances.
-                                We are committed to helping SS Superior & Associates
-                                clients with taxation GST and business setup services.</p>
+                                and business advice.</p>
                             {/* <Link to="/contact" className="Consultnow">Consult now <i className="ri-arrow-right-line"></i></Link> */}
                         </div>
                     </div>

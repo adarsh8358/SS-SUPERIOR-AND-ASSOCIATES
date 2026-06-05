@@ -114,10 +114,10 @@ const BestCAFirmsBhopalArticleship = () => {
                             <h1>Best CA Firms in Bhopal for Articleship -<br />SS Superior & Associates</h1>
                             <h2>Best CA Firms in Bhopal for Articleship - Building Trust. Enabling Growth.</h2>
 
-                            <p>SS Superior & Associates is here to help you with all your Taxation, GST, Compliance,
+                            {/* <p>SS Superior & Associates is here to help you with all your Taxation, GST, Compliance,
                                 Audit and Business Setup needs. We are a Tax and Business Advisory Partner. We make
                                 complex legal and financial processes easy for individuals, professionals, startups
-                                and big businesses.</p>
+                                and big businesses.</p> */}
                             {/* <Link to="/contact" className="Consultnow">Consult now <i className="ri-arrow-right-line"></i></Link> */}
                         </div>
                     </div>
